@@ -1,0 +1,62 @@
+---
+layout: layouts/base.liquid
+---
+
+<div class="wrapper">
+        
+    <nav class="page-header navbar navbar-expand-lg mb-4 border-bottom p-3">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/img/metadome.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tags/produit">Produit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/docs/api">Développeurs</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item m-1">
+                    <a class="btn btn-sm btn-outline-dark" href="mailto:contact@metarisc.fr">Nous contacter</a>
+                </li>
+                <li class="nav-item m-1">
+                    <a class="btn btn-sm btn-success" href="https://app.metarisc.fr">
+                        Accéder à l'application
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container page-body">
+        {{ content }}
+    </main>
+
+    <div class="container-fluid page-footer text-light mt-4" style="background-color: #36393d">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 my-4">
+                <div class="col mb-3">
+                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                        <img src="/img/metadome.png" width="50" height="50" alt="">
+                    </a>
+                    <p>Metarisc 2023</p>
+                </div>
+                <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/" class="nav-link text-light p-0">Accueil</a></li>
+                        <li class="nav-item mb-2"><a href="/tags/produit" class="nav-link text-light p-0">Produit</a></li>
+                        <li class="nav-item mb-2"><a href="/docs/api" class="nav-link text-light p-0">Développeurs</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</div>

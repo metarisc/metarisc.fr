@@ -1,0 +1,27 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+layout: layouts/home.liquid
+eleventyComputed:
+  title: Tagged “{{ tag }}”
+permalink: /tags/{{ tag | slugify }}/
+---
+
+<div class="mb-4 pt-4 pb-4 border-bottom">
+
+  <p class="mt-4 mb-0">Catégorie</p>
+
+  <h1 class="mt-0 mb-4" style="font-weight: 600;">{{ tag | upcase }}</h1>
+
+</div>
+
+{% assign postslist = collections[ tag ] %}
+{% include "postslist.liquid" %}

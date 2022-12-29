@@ -1,0 +1,20 @@
+---
+layout: layouts/home.liquid
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<div class="p-5 mb-4 bg-light rounded-3" style="background-image: url(img/jumbotron-bg.jpg); background-size: cover; background-position: 50%;">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Portail unique opérationnel</h1>
+    <p class="col-md-8 fs-4">
+      Metarisc vous permet d'avoir toutes vos données de prévention, de prévision, et bien plus encore, dans une seule application, facilitant votre quotidien. Organiser l'avenir en toute sérénité.
+    </p>
+    <a class="btn btn-primary btn-lg" href="/tags/produit">En savoir plus</a>
+  </div>
+</div>
+
+{% assign maxPosts = collections.post.length | at_most: 3 %}
+{% assign postslist = collections.post %}
+{% include "postslist.liquid" %}
