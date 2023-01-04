@@ -6,6 +6,9 @@ module.exports = function(eleventyConfig) {
   // Copy all posts images
   eleventyConfig.addPassthroughCopy("posts/*/*.jpg");
 
+  // Copy error page
+  eleventyConfig.addPassthroughCopy("error.html");
+
   return {
     templateFormats: ['html', 'liquid', 'md']
   };
