@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Prevarisc",
+    "icon_url": "/img/integrations/prevarisc.png",
+    "description": "Importez vos données Prevarisc dans Metarisc facilement."
+  },
+  {
+    "name": "Plat'AU",
+    "icon_url": "/img/integrations/platau.png",
+    "description": "Récupérez vos dossiers dématérialisés grâce à la connexion native aux plateformes de dématérialisation des autorisations d’urbanisme."
+  },
+  {
+    "name": "MobilCOS",
+    "icon_url": "/img/integrations/mobilcos.png",
+    "description": "Affichez les informations DECI / ERP sur votre assistant numérique opérationnel."
+  }
+]

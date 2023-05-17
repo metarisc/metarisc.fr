@@ -1,0 +1,19 @@
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
+
+  {% for integration in integrations %}
+
+    <div class="col d-flex align-items-stretch">
+      <div class="card bg-light bg-gradient">
+          <div class="card-body">
+              <h5 class="card-title">
+                  <img src="{{integration.icon_url | url}}" width="50" height="50" class="rounded">
+                  {{integration.name}}
+              </h5>
+              <p class="card-text text-secondary">{{integration.description}}</p>
+          </div>
+      </div>
+    </div>
+
+  {% endfor %}
+
+</div>
