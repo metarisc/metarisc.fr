@@ -5,16 +5,20 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   // Copy the `img` and `css` folders to the output
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/css");
 
   // Copy all posts images
-  eleventyConfig.addPassthroughCopy("posts/*/*.jpg");
+  eleventyConfig.addPassthroughCopy("src/posts/*/*.jpg");
 
   // Copy error page
-  eleventyConfig.addPassthroughCopy("error.html");
+  eleventyConfig.addPassthroughCopy("src/error.html");
 
   return {
-    templateFormats: ['html', 'liquid', 'md', 'njk']
+    templateFormats: ['html', 'liquid', 'md', 'njk'],
+    dir: {
+      input: "src",
+      output: "dist"
+    }
   };
 }
