@@ -1,41 +1,123 @@
-html, body {
-    box-sizing: border-box;
-    height: 100%;
-    padding: 0;
-    margin: 0;
+html,
+body {
+  background-image: url("../img/bg-gradient.jpg");
+  background-size: 100%;
+  font-size: 16px;
+  color: white;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-.wrapper {
-    box-sizing: border-box;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+h1 {
+  font-size: 48px;
+  line-height: 56px;
 }
 
-.page-header, .page-footer {
-    flex-grow: 0;
-    flex-shrink: 0;
+h1 span {
+  color: red;
+}
+
+.firstSection {
+  margin-left: 5em;
+  max-width: 70%;
+  flex: 0 1 auto;
+  background: transparent;
+}
+
+.secondSection {
+  flex: 1 0 auto;
+  background: #36393d;
 }
 
 .page-body {
-    flex-grow: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.firstSection .btn {
+  color: white;
+  font-weight: 600;
+  background-image: linear-gradient(
+    90deg,
+    #4eb9a8 0%,
+    #4eb9a8 0.01%,
+    #09806d 100%
+  );
+}
+
+.news {
+  text-decoration: none;
+}
+
+.news .label {
+  color: white;
+  font-size: 14px;
+  border: 1px solid var(--card, #fff);
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0px 0.918px 7.342px 0px rgba(94, 94, 94, 0.07);
+  backdrop-filter: blur(14.619999885559082px);
+}
+
+.news span {
+  background-image: linear-gradient(#ffc107, #fabc00, #ffc519);
+  border-radius: 4px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.dots {
+  display: flex;
+  align-items: start;
+  justify-content: baseline;
+}
+
+.screensImg {
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.page-header,
+.page-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.page-footer {
+  position: relative;
+  bottom: 0;
+  background-color: #36393d;
+  box-shadow: 0px -11px 17px 0px rgba(255, 255, 255, 0.08);
 }
 
 .grid-3 {
-    display: grid;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-auto-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .post p {
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: -0.01em;
-    text-align: justify;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  text-align: justify;
 }
 
 .post h3 {
-    font-size: 20px;
+  font-size: 20px;
 }

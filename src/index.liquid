@@ -1,20 +1,35 @@
 ---
 layout: layouts/home.liquid
 eleventyNavigation:
-  key: Home
-  order: 1
+key: Home
+order: 1
 ---
 
-<div class="p-5 mb-4 bg-light rounded-3" style="background-image: url(img/jumbotron-bg.jpg); background-size: cover; background-position: 50%;">
-  <div class="container-fluid py-5">
-    <h1 class="display-5 fw-bold">Portail unique opérationnel</h1>
-    <p class="col-md-8 fs-4">
-      Metarisc vous permet d'avoir toutes vos données de prévention, de prévision, et bien plus encore, dans une seule application, facilitant votre quotidien. Organiser l'avenir en toute sérénité.
-    </p>
-    <a class="btn btn-primary btn-lg" href="/tags/produit">En savoir plus</a>
+<div class="firstSection py-5">
+  <img src="/img/dots.svg" width="108" height="29" alt="">
+  <div class="row row-cols-2">
+    <div class="col">
+      <h1 class="display-5 fw-bold"><span>METARISC</span>, portail unique pour des risques multiples</h1>
+      <p>
+        Un portail opérationnel unique conçu en mode SaaS, disponible à tout moment et en tout lieu,
+        permettant de collecter, enregistrer et consulter vos données de prévention et de prévision.
+      </p>
+      <a class="btn btn-md" href="#">Découvrir le projet</a>
+      <div class="row">
+        <a class="news my-4" href="#">
+          <span class="label py-2 px-2">
+            <span class="py-1 px-1">Important</span>
+            Le site metarisc est en construction. Le release de la V.1 en Avril
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <img src="/img/screens.svg" class="screensImg" alt="">
+    </div>
   </div>
 </div>
 
-{% assign maxPosts = collections.post.length | at_most: 3 %}
-{% assign postslist = collections.post %}
-{% include "postslist.liquid" %}
+<section class="secondSection">
+  <h2>Suite</h2>
+</section>
