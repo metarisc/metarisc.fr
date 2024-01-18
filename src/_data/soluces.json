@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Service d'Incendie et de Secours",
+        "img_url": "img/bg-gradient.jpg"
+    },
+    {
+        "title": "Collectiviés",
+        "img_url": "img/bg-gradient.jpg"
+    },
+    {
+        "title": "Préfectures",
+        "img_url": "img/bg-gradient.jpg"
+    },
+    {
+        "title": "Gestionnaire des eaux",
+        "img_url": "img/bg-gradient.jpg"
+    }
+
+]

@@ -1,0 +1,12 @@
+{% for soluce in soluces %}
+
+<div class="col soluce">
+  <div class="card bg-transparent">
+    <div class="card-body">
+      <h5 class="card-title">{{soluce.title}}</h5>
+    </div>
+    <img src="{{ soluce.img_url | url }}" class="card-img-bottom" alt="">
+  </div>
+</div>
+
+{% endfor %}
