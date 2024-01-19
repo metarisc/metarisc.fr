@@ -1,12 +1,18 @@
 {% for soluce in soluces %}
 
 <div class="col soluce">
-  <div class="card bg-transparent">
-    <div class="card-body">
-      <h5 class="card-title">{{soluce.title}}</h5>
+  <a href="#">
+    <div class="card bg-transparent">
+      <div class="card-body d-flex">
+        <i class="bi bi-inboxes-fill"></i>
+        <h5 class="card-title text-light">{{soluce.title}} </h5>
+        <div class="d-flex justify-content-end mb-auto">
+          <i class="bi bi-arrow-right-short d-flex"></i>
+        </div>
+      </div>
+      <img src="{{ soluce.img_url | url }}" class="card-img-bottom" alt="">
     </div>
-    <img src="{{ soluce.img_url | url }}" class="card-img-bottom" alt="">
-  </div>
+  </a>
 </div>
 
 {% endfor %}
