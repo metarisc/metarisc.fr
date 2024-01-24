@@ -98,6 +98,10 @@ h2 {
   padding-bottom: 13em;
 }
 
+.resize {
+  height: 1000px;
+}
+
 .nav-underline {
   text-decoration: none;
 
@@ -115,6 +119,24 @@ h2 {
   align-items: flex-start;
 }
 
+.scroll {
+  font-style: italic !important;
+
+  i {
+    animation: 500ms ease-in infinite alternate scrollAnim;
+  }
+}
+
+@keyframes scrollAnim {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
 .nav-underline {
   .nav-link {
     font-weight: 600;
@@ -126,13 +148,20 @@ h2 {
 }
 
 .screen {
+  background-image: url(/img/screen.png);
+  background-repeat: no-repeat;
   position: relative;
-  z-index: 5;
+  width: 1309px;
+  height: 926px;
 }
 
 .dotted-lines {
+  background-image: url(/img/dotted-lines.png);
+  background-repeat: no-repeat;
   position: absolute;
-  z-index: 4;
+  right: -4%;
+  width: 469px;
+  height: 1047px;
 }
 
 .news {
@@ -164,12 +193,36 @@ h2 {
   justify-content: baseline;
 }
 
+.bg-snow {
+  border: 1px solid var(--card, #fff) !important;
+  background: rgba(255, 255, 255, 0.24) !important;
+  box-shadow: 0px 0.918px 7.342px 0px rgba(94, 94, 94, 0.07) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.bg-snow-gray {
+  border-radius: 6.936px !important;
+  border: 0.867px solid var(--card, #FFF) !important;
+  background: var(--card, rgba(255, 255, 255, 0.54)) !important;
+}
+
+.contact {
+  height: 11em;
+
+  h3,
+  span {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .btn {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
 .soluce {
   border-radius: 8px;
-  border: 1px solid var(--card, #fff);
-  background: rgba(255, 255, 255, 0.24);
-  box-shadow: 0px 0.918px 7.342px 0px rgba(94, 94, 94, 0.07);
-  backdrop-filter: blur(12px);
 
   a {
     text-decoration: none;
@@ -218,6 +271,103 @@ h2 {
 
 }
 
+.nav-pills {
+
+  h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  a:hover {
+    background: rgba(255, 255, 255, 0.16) !important;
+  }
+
+  a[aria-selected=true] {
+    border: 1px solid var(--card, #fff) !important;
+    background: rgba(255, 255, 255, 0.24) !important;
+    box-shadow: 0px 0.918px 7.342px 0px rgba(94, 94, 94, 0.07) !important;
+    backdrop-filter: blur(12px) !important;
+    font-weight: 600;
+    line-height: 24px;
+    padding-left: 20px;
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    right: -15px;
+    border-left: 1px solid white;
+    z-index: -1;
+  }
+
+  a[aria-selected='false'] {
+    height: auto !important;
+    width: auto !important;
+
+    i {
+      color: transparent;
+    }
+  }
+}
+
+.hidden {
+  overflow: hidden;
+  position: relative;
+}
+
+#v-pills-tabContent {
+  .tab-pane{
+    box-shadow: -2px 8px 8px 0px rgba(255, 255, 255, 0.24), -3px -1px 4px 0px rgba(255, 255, 255, 0.25);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100em;
+    height: 51em;
+  }
+}
+
+#nav-erp {
+  background-image: url(/img/secteurs-activites/erp.svg);
+}
+
+#nav-deci {
+  background-image: url(/img/secteurs-activites/deci.svg);
+}
+
+#nav-icpe {
+  background-image: url(/img/secteurs-activites/icpe.svg);
+}
+
+#nav-manif {
+  background-image: url(/img/secteurs-activites/manif.svg);
+}
+
+.carousel-item .card .card-body {
+  .card-title {
+    font-size: 24px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .card-text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+}
+
+.carousel-indicators .active {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
 
 .intro {
   display: flex;
@@ -249,6 +399,22 @@ h2 {
     text-decoration: none;
   }
 }
+
+/* .tr-angle {
+  position: absolute;
+  right: 120px;
+  top: 269em;
+
+  img {
+    rotate: 180deg;
+  }
+}
+
+.bl-angle {
+  position: absolute;
+  top: 282em;
+  left: 120px
+} */
 
 .grid-3 {
   display: grid;
