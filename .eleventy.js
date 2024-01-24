@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/scripts");
 
   // Copy all posts images
   eleventyConfig.addPassthroughCopy("src/posts/*/*.jpg");
