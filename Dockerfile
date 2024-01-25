@@ -22,7 +22,8 @@ RUN apk add curl
 HEALTHCHECK --interval=3s --timeout=3s CMD curl -sS --fail 0.0.0.0:80 || exit 1
 
 # Nginx rewrites
-COPY server/nginx.conf /etc/nginx/conf.d/default.conf
+COPY server/nginx.conf /etc/nginx/nginx.conf
+COPY server/conf.d /etc/nginx/conf.d
 
 # Remove default nginx pages
 RUN rm -rf /usr/share/nginx/html/*
