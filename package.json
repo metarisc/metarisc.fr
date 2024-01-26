@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "@11ty/eleventy-plugin-rss": "^1.2.0"
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "bootstrap": "^5.3.2",
+    "eleventy-sass": "^2.2.4"
   },
   "scripts": {
     "generate": "npx @11ty/eleventy --output=dist",
