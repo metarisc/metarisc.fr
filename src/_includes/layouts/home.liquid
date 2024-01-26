@@ -4,12 +4,17 @@ layout: layouts/base.liquid
 
 <div class="wrapper">
 
-    <nav class="page-header navbar navbar-expand-lg border-bottom p-3">
+    <nav class="page-header navbar navbar-expand-lg border-bottom py-xl-3" style="background-color: #495057 !important;">
         <a class="navbar-brand" href="/">
             <img src="/img/logo.svg" width="178" height="47" class="d-inline-block align-top" alt="">
         </a>
-        <div class="container-fluid justify-content-end">
-            <ul class="navbar-nav mb-2 mb-lg-0">
+        <button class="navbar-toggler bg-dark mb-3 mx-3" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-dark"></span>
+        </button>
+        <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav gap-2 mb-2 mb-lg-0 mx-3">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -33,7 +38,7 @@ layout: layouts/base.liquid
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Intégration</a>
+                    <a class="nav-link text-light" href="#">Intégration</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -59,11 +64,11 @@ layout: layouts/base.liquid
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="mailto:metarisc@sdis62.fr">Contact</a>
+                    <a class="nav-link text-light" href="mailto:metarisc@sdis62.fr">Contact</a>
                 </li>
 
-                <li class="nav-item m-1">
-                    <a class="btn btn-sm btn-primary" href="https://app.metarisc.fr" target="_blank">
+                <li class="nav-item my-1">
+                    <a class="btn btn-sm btn-lagoon text-light border-0" href="https://app.metarisc.fr" target="_blank">
                         Accéder à l'application
                         <i class="bi bi-box-arrow-up-right"></i>
                     </a>
@@ -78,13 +83,13 @@ layout: layouts/base.liquid
 
     <div class="container-fluid page-footer text-light" style="background-color: #36393d">
         <div class="container-fluid w-75">
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 my-4">
-                <div class="col mb-3">
+            <footer class="row  py-4 my-4">
+                <div class="col mb-3 d-none d-xl-block">
                     <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
                         <img src="/img/logo.svg" width="178" height="47" alt="">
                     </a>
                 </div>
-                <div class="col mb-3">
+                <div class="col mb-lg-3">
                     <h5 class="mb-3"><a href="#" class="nav-link text-light p-0">Accueil</a></h5>
                     <ul class="nav flex-column m-2 gap-1">
                         <li class="nav-item mb-2">
@@ -105,7 +110,9 @@ layout: layouts/base.liquid
                     </ul>
                     <h5 class="mt-3"><a href="#" class="nav-link text-light p-0">Contact</a></h5>
                 </div>
-                <div class="col mb-3">
+                <div class="divider d-block d-sm-none my-3"></div>
+
+                <div class="col mb-lg-3">
                     <h5 class="mb-3"><a href="#" class="nav-link text-light p-0">Solution</a></h5>
                     <ul class="nav flex-column m-2">
                         <li class="nav-item mb-2">
@@ -123,7 +130,8 @@ layout: layouts/base.liquid
                     </ul>
                     <h5 class="mt-3"><a href="#" class="nav-link text-light p-0">Offres</a></h5>
                 </div>
-                <div class="col mb-3">
+                <div class="divider d-block d-sm-none my-3"></div>
+                <div class="col mb-lg-3">
                     <h5 class="mb-3"><a href="#" class="nav-link text-light p-0">Développement</a></h5>
                     <h5 class="mb-3"><a href="#" class="nav-link text-light p-0">Intégration</a></h5>
                     <h5 class="mb-3"><a href="#" class="nav-link text-light p-0">Ressources</a></h5>
@@ -136,6 +144,7 @@ layout: layouts/base.liquid
                         </li>
                     </ul>
                 </div>
+                <div class="divider d-block d-sm-none my-3"></div>
                 <div class="col">
                     <div class="d-flex mb-4 gap-4">
                         <a href="#"><i class="bi bi-linkedin text-light"></i></a>
@@ -151,8 +160,8 @@ layout: layouts/base.liquid
                         <h5 class="mb-4">Numéro : 00.00.00.00.00</h5>
                     </div>
                 </div>
-                <div class="row divider mt-5 w-100">
-                    <div class="d-flex justify-content-center my-5 gap-4">
+                <div class="row divider mt-5 w-100 overflow-hidden">
+                    <div class="d-md-flex justify-content-center my-5 gap-4">
                         <a href="#" class="text-light">
                             <h5>Mentions légales</h5>
                         </a>

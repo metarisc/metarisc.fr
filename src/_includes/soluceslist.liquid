@@ -2,15 +2,23 @@
 
 <div class="col soluce bg-snow">
   <a href="#">
-    <div class="card bg-transparent">
-      <div class="card-body d-flex">
-        <i class="bi bi-inboxes-fill"></i>
-        <h5 class="card-title text-light">{{soluce.title}} </h5>
-        <div class="d-flex justify-content-end mb-auto">
-          <i class="bi bi-arrow-right-short d-flex"></i>
+    <div class="card bg-transparent w-100 hidden">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-2">
+            <i class="bi bi-inboxes-fill"></i>
+          </div>
+          <div class="col-7">
+            <h5 class="card-title text-light text-wrap">{{soluce.title}} </h5>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <i class="bi bi-arrow-right-short"></i>
+          </div>
         </div>
       </div>
-      <img src="{{ soluce.img_url | url }}" class="card-img-bottom" alt="">
+      <div class="d-flex flex-row card-img justify-content-end">
+        <img src="{{ soluce.img_url | url }}" class="card-img-bottom rounded" alt="">
+      </div>
     </div>
   </a>
 </div>
