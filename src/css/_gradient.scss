@@ -1,0 +1,24 @@
+$lagoon: linear-gradient(90deg, #4EB9A8 0%, #4EB9A8 0.01%, #09806D 100%);
+$LPtoDH: linear-gradient(90deg, #D01F3C 0%, #791222 100%);
+
+.text-lagoon {
+    background: $lagoon;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-lagoon {
+    background: $lagoon;
+}
+
+.text-LPtoDH {
+    background: $LPtoDH;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-LPtoDH {
+    background: $LPtoDH;
+}
