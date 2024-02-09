@@ -1,0 +1,29 @@
+i.picto {
+    width: 24px;
+    height: 24px;
+    &-erp {
+        content: url("../img/secteurs-activites/picto-erp.svg");
+    }
+
+    &-deci {
+        content: url("../img/secteurs-activites/picto-deci.svg");
+    }
+
+    &-icpe {
+        content: url("../img/secteurs-activites/picto-icpe.svg");
+    }
+
+    &-manif {
+        content: url("../img/secteurs-activites/picto-manif.svg");
+    }
+
+    &-red-dot {
+        content: url("../img/red-dot.svg");
+    }
+
+    &-dots {
+        content: url("../img/dots.svg");
+        width: 108px;
+        height: 28px;
+    }
+  }

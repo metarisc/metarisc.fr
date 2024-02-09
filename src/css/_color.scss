@@ -1,0 +1,51 @@
+$lagoon: linear-gradient(90deg, #4EB9A8 0%, #4EB9A8 0.01%, #09806D 100%);
+$LPtoDH: linear-gradient(90deg, #D01F3C 20%, #791222 100%);
+$smoked-Pearl : #495057;
+
+.text-lagoon {
+    background: $lagoon;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-smoked-pearl {
+    background: $smoked-Pearl;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-lagoon {
+    background: $lagoon;
+}
+
+.text-LPtoDH {
+    background: $LPtoDH;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-LPtoDH {
+    background: $LPtoDH;
+}
+
+.bg-gray {
+    flex: 1 0 auto;
+    background: #36393d;
+}
+
+
+.bg-snow {
+    border: 1px solid #fff !important;
+    background: rgba(255, 255, 255, 0.24) !important;
+    box-shadow: 0px 0.918px 7.342px 0px rgba(94, 94, 94, 0.07) !important;
+    backdrop-filter: blur(12px) !important;
+}
+
+.bg-snow-gray {
+    border-radius: 6.936px !important;
+    border: 0.867px solid #FFF !important;
+    background: rgba(255, 255, 255, 0.54) !important;
+}

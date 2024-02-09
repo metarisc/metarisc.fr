@@ -1,0 +1,25 @@
+.fifthSection {
+  .carousel-indicators .active {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+  }
+  
+  .bi {
+    font-size: 25px;
+  }
+
+  .carousel-item .card .card-body {
+    .card-title {
+      // font-size: 24px;
+      font-weight: 600;
+    }
+
+    .card-text {
+      font-size: 16px;
+      font-weight: 400;
+      text-align: justify;
+    }
+
+  }
+}
