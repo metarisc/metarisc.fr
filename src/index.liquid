@@ -10,40 +10,38 @@ order: 1
 <!-- Un container-fluid -> une row -> 2 cols -->
 <section class="firstSection">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-xl resize">
+    <div class="row d-flex gap-5 justify-content-between">
+      <div class="col-xl-5 resize">
         <div class="h-100 d-flex align-items-center">
-          <div class="mx-5">
-            <img
-              src="/img/dots.svg"
-              class="dots"
-              width="108"
-              height="29"
-              alt="">
-            <h1 class="display-5 fw-bold">
-              <span class="text-LPtoDH">METARISC</span>, portail unique pour des risques                                                 
-              multiples</h1>
+          <div class="ms-7_5">
+            <i class="picto-dots mt-3_5"></i>
+            <h1 class="py-2">
+              <span class="text-LPtoDH">METARISC</span>, portail unique pour des risques
+              multiples
+            </h1>
             <p>
-              Un portail opérationnel unique conçu en mode SaaS, disponible à tout moment et en tout lieu,                                                 
+              Un portail opérationnel unique conçu en mode SaaS, disponible à tout moment et en tout lieu,
               permettant de collecter, enregistrer et consulter vos données de prévention et de prévision.
             </p>
-            <a class="btn btn-lagoon btn-md border-0 mb-2 text-light" href="#">Découvrir le projet</a>
-            <div class="row w-75">
-              <a class="news mt-4" href="#">
-                <p class="label px-2">
-                  <span class="py-2 px-2 bg-warning">Important</span>
+            <a class="btn btn-lagoon border-0 mb-2 text-light px-1_5 py-1 mt-1_5" href="#">
+              Découvrir le projet
+            </a>
+            <div class="row">
+              <a class="news col-xxl-12 col-xl-9 col-md-9 d-inline-flex mt-3_5" href="#">
+                <p class="label p-1" style="border-radius: 4px;">
+                  <span class="px-1_5 py-1 me-2 bg-warning">Important</span>
                   Le site metarisc est en construction. Le release de la V.1 en Avril
                 </p>
               </a>
             </div>
-            <div class="d-flex gap-2 pt-5 mt-5 scroll">
+            <div class="d-flex gap-1_5 pt-5 mt-5 scroll align-content-end">
               <i class="bi bi-arrow-down-square-fill"></i>
               <p>SCROLL</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col screens"></div>
+      <div class="col-xl screens"></div>
     </div>
   </div>
 </section>
@@ -55,15 +53,17 @@ order: 1
   <!-- Liste des solutions -->
   <!-- Un container-fluid -> une row en display flex -> une row avec les cards -->
   <section class="secondSection">
-    <div class="container-fluid px-5 pb-5">
-      <div class="d-flex align-items-center gap-4 pb-3 mt-5 pt-5">
-        <img
-          src="img/red-dot.svg"
-          class="red-dot"
-          alt="">
-        <h2 class="">Un profil, une solution</h2>
+    <div class="container-fluid pb-5">
+      <div class="row mb-3_5 mx-lg-8">
+        <div class="col-xl-5">
+          <div class="d-flex align-items-center gap-2 pb-3 mt-8">
+            <i class="picto-red-dot"></i>
+            <span class="fs-2">Un profil, une solution</span>
+          </div>
+        </div>
       </div>
-      <div class="row gap-4 my-3 mx-lg-5">
+
+      <div class="row gx-0 gap-4 my-3 mx-lg-8 px-6_5">
         {% include "soluceslist.liquid" %}
       </div>
     </div>
@@ -73,82 +73,45 @@ order: 1
   <!-- Navs / Tabs, 2 images -->
   <!-- Un container-fluid -> une row -> une col avec les tabs & texte -> une col avec les images -->
   <section class="thirdSection">
-    <div class="container-fluid hidden">
-      <div class="row mb-5 mx-lg-3 px-lg-5 mx-1">
+    <div class="container-fluid">
+      <div class="row mb-5 mx-lg-8 mx-1">
         <div class="col-xl-5">
-          <div class="d-flex align-items-center gap-4 pb-3 my-5 py-5">
-            <img
-              src="img/red-dot.svg"
-              class="red-dot"
-              alt="">
-            <h2>Pourquoi choisir METARISC ?</h2>
+          <div class="d-flex align-items-center gap-2 pb-3 my-5 py-5">
+            <i class="picto-red-dot"></i>
+            <span class="fs-2">Pourquoi choisir METARISC ?</span>
           </div>
 
           <nav>
-            <ul
-              class="nav nav-underline d-flex flex-column flex-sm-row gap-4 mb-5 w-auto"
-              id="nav-tab"
+            <ul class="nav nav-underline d-flex flex-column flex-sm-row gap-2 mb-5 w-auto mx-lg-1" id="nav-tab"
               role="tablist">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="#portail"
-                  id="nav-portail-tab"
-                  aria-current="page"
-                  data-bs-toggle="tab"
-                  data-bs-target="#portail"
-                  role="tab"
-                  aria-controls="#portail"
-                  aria-selected="true">Un portail                                                 
+                <a class="nav-link active" href="#portail" id="nav-portail-tab" aria-current="page" data-bs-toggle="tab"
+                  data-bs-target="#portail" role="tab" aria-controls="#portail" aria-selected="true">Un portail
                   unique</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#demat"
-                  id="nav-demat-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#demat"
-                  role="tab"
-                  aria-controls="#demat"
-                  aria-selected="false">Dématérialisation des processus</a>
+                <a class="nav-link" href="#demat" id="nav-demat-tab" data-bs-toggle="tab" data-bs-target="#demat"
+                  role="tab" aria-controls="#demat" aria-selected="false">Dématérialisation des processus</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#securise"
-                  id="nav-securise-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#securise"
-                  role="tab"
-                  aria-controls="#securise"
-                  aria-selected="false">Sécurisé</a>
+                <a class="nav-link" href="#securise" id="nav-securise-tab" data-bs-toggle="tab"
+                  data-bs-target="#securise" role="tab" aria-controls="#securise" aria-selected="false">Sécurisé</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#club"
-                  id="nav-club-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#club"
-                  role="tab"
-                  aria-controls="#club"
-                  aria-selected="false">Club utilisateur</a>
+                <a class="nav-link" href="#club" id="nav-club-tab" data-bs-toggle="tab" data-bs-target="#club"
+                  role="tab" aria-controls="#club" aria-selected="false">Club utilisateur</a>
               </li>
             </ul>
           </nav>
 
-          <div class="tab-content" id="nav-tabContent">
+          <div class="tab-content mx-lg-1" id="nav-tabContent">
 
-            <div
-              class="col tab-pane show active fade"
-              id="portail"
-              role="tabpanel"
-              aria-labelledby="nav-portail-tab">
+            <div class="col tab-pane show active fade" id="portail" role="tabpanel" aria-labelledby="nav-portail-tab">
               <h2>
-                <span class="text-LPtoDH">METARISC</span>, portail unique pour des risques multiples</h2>
+                <span class="text-LPtoDH">METARISC</span>, portail unique pour des risques multiples
+              </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum                                                 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum
                 turpis,
                 scelerisque et justo nec,
                 iaculis consectetur urna. Vestibulum rutrum cursus orci nec pretium. Curabitur est lectus, convallis eu
@@ -164,7 +127,7 @@ order: 1
               </p>
               <br>
               <p>
-                Cras non vestibulum enim, maximus mollis tortor. Nam non dapibus est, eget tempor lectus. Duis pulvinar                                                 
+                Cras non vestibulum enim, maximus mollis tortor. Nam non dapibus est, eget tempor lectus. Duis pulvinar
                 tellus at mollis vehicula.
                 Phasellus rutrum luctus velit, sed bibendum orci laoreet sed. Ut id molestie lectus, in gravida dui.
                 Quisque
@@ -176,7 +139,7 @@ order: 1
               </p>
               <br>
               <p>
-                Nunc lectus non convallis pellentesque odio pellentesque ipsum :                                                 
+                Nunc lectus non convallis pellentesque odio pellentesque ipsum :
                 Amet quis porttitor vitae eget amet neque. Pharetra ornare nunc arcu faucibus hendrerit. Bibendum morbi
                 cras habitant mauris elit condimentum dui eu cursus.
                 Risus ut etiam euismod neque diam at morbi feugiat. Convallis viverra luctus mauris platea suscipit
@@ -186,19 +149,17 @@ order: 1
                 Volutpat nunc mi amet velit eget. Commodo vitae arcu purus risus volutpat.
               </p>
               <div class="d-flex justify-content-center my-5">
-                <a class="btn btn-lagoon border-0 text-light btn-md w-auto" href="#">Bouton d'appel à l'action</a>
+                <a class="btn btn-lagoon border-0 text-light btn-md w-auto py-1 px-1_5" href="#">Bouton d'appel à
+                  l'action</a>
               </div>
             </div>
 
-            <div
-              class="col tab-pane fade"
-              id="demat"
-              role="tabpanel"
-              aria-labelledby="nav-demat-tab">
+            <div class="col tab-pane fade" id="demat" role="tabpanel" aria-labelledby="nav-demat-tab">
               <h2>
-                <span class="text-LPtoDH">METARISC</span>, portail unique pour des risques multiples</h2>
+                <span class="text-LPtoDH">METARISC</span>, portail unique pour des risques multiples
+              </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum                                                 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum
                 turpis,
                 scelerisque et justo nec,
                 iaculis consectetur urna. Vestibulum rutrum cursus orci nec pretium. Curabitur est lectus, convallis eu
@@ -214,7 +175,7 @@ order: 1
               </p>
               <br>
               <p>
-                Cras non vestibulum enim, maximus mollis tortor. Nam non dapibus est, eget tempor lectus. Duis pulvinar                                                 
+                Cras non vestibulum enim, maximus mollis tortor. Nam non dapibus est, eget tempor lectus. Duis pulvinar
                 tellus at mollis vehicula.
                 Phasellus rutrum luctus velit, sed bibendum orci laoreet sed. Ut id molestie lectus, in gravida dui.
                 Quisque
@@ -226,16 +187,13 @@ order: 1
               </p>
             </div>
 
-            <div
-              class="col tab-pane fade"
-              id="securise"
-              role="tabpanel"
-              aria-labelledby="nav-securise-tab">
+            <div class="col tab-pane fade" id="securise" role="tabpanel" aria-labelledby="nav-securise-tab">
               <h2>
                 <span class="text-LPtoDH">Lorem</span>
-                ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                ipsum dolor sit amet consectetur adipisicing elit.
+              </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum                                                 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum
                 turpis,
                 scelerisque et justo nec,
                 iaculis consectetur urna. Vestibulum rutrum cursus orci nec pretium. Curabitur est lectus, convallis eu
@@ -251,7 +209,7 @@ order: 1
               </p>
               <br>
               <p>
-                Cras non vestibulum enim, maximus mollis tortor. Nam non dapibus est, eget tempor lectus. Duis pulvinar                                                 
+                Cras non vestibulum enim, maximus mollis tortor. Nam non dapibus est, eget tempor lectus. Duis pulvinar
                 tellus at mollis vehicula.
                 Phasellus rutrum luctus velit, sed bibendum orci laoreet sed. Ut id molestie lectus, in gravida dui.
                 Quisque
@@ -263,7 +221,7 @@ order: 1
               </p>
               <br>
               <p>
-                Nunc lectus non convallis pellentesque odio pellentesque ipsum :                                                 
+                Nunc lectus non convallis pellentesque odio pellentesque ipsum :
                 Amet quis porttitor vitae eget amet neque. Pharetra ornare nunc arcu faucibus hendrerit. Bibendum morbi
                 cras habitant mauris elit condimentum dui eu cursus.
                 Risus ut etiam euismod neque diam at morbi feugiat. Convallis viverra luctus mauris platea suscipit
@@ -274,16 +232,13 @@ order: 1
               </p>
             </div>
 
-            <div
-              class="col tab-pane fade"
-              id="club"
-              role="tabpanel"
-              aria-labelledby="nav-club-tab">
+            <div class="col tab-pane fade" id="club" role="tabpanel" aria-labelledby="nav-club-tab">
               <h2>
                 <span class="text-LPtoDH">Lorem</span>
-                ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                ipsum dolor sit, amet consectetur adipisicing elit.
+              </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum                                                 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum
                 turpis,
                 scelerisque et justo nec,
                 iaculis consectetur urna. Vestibulum rutrum cursus orci nec pretium. Curabitur est lectus, convallis eu
@@ -302,8 +257,12 @@ order: 1
         </div>
 
         <div class="col-xl-6 d-none d-xl-block">
-          <div class="dotted-lines"></div>
-          <div class="screen mt-5"></div>
+          <div class="dotted-lines">
+            <img src="/img/screen.png" alt="" style="visibility: hidden;">
+          </div>
+          <div class="screen mt-8_5">
+            <img src="/img/dotted-lines.png" alt="" style="visibility: hidden;">
+          </div>
         </div>
       </div>
 
@@ -314,136 +273,91 @@ order: 1
   <!-- Navs / Tabs, 4 images (fonctionne avec ./scripts/script.js) -->
   <!-- Un container-fluid -> une row -> une col avec les tabs -> une col avec les images -->
   <section class="fourthSection">
-    <div class="container-fluid px-5 pb-5 mb-5 hidden">
-      <div class="row gap-5 mt-xl-3 mb-xl-5 mx-xl-5">
-        <div class="col-xl-4">
-          <div class="d-flex align-items-center gap-4 pb-3 mt-5 pt-5">
-            <img
-              src="img/red-dot.svg"
-              class="red-dot"
-              alt="">
-            <h2>Secteurs d'activités</h2>
+    <div class="container-fluid px-5 pb-5 mb-5">
+      <div class="row mb-5 mx-lg-8">
+        <div class="col-xl-5">
+          <div class="d-flex align-items-center gap-2 pb-3 mt-5 pt-5">
+            <i class="picto-red-dot"></i>
+            <span class="fs-2">Secteurs d'activités</span>
           </div>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam aperiam dignissimos harum officiis                                                 
+          <p class="me-5_5">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam aperiam dignissimos harum officiis
             blanditiis
             numquam dolorem amet eum delectus voluptatem? Fugiat sunt in at quis deserunt, accusantium reiciendis modi
             facilis.
           </p>
 
-          <div
-            class="nav flex-column nav-pills gap-4 pt-3"
-            id="v-pills-tab"
-            role="tablist"
+          <div class="nav flex-column nav-pills gap-3 mt-8 mx-2" id="v-pills-tab" role="tablist"
             aria-orientation="vertical">
 
-            <a
-              class="nav-link active bg-transparent nav-secteur"
-              id="v-pills-erp-tab"
-              data-bs-toggle="pill"
-              href="#nav-erp"
-              role="tab"
-              data-bs-target=".erp"
-              aria-controls="#nav-erp"
-              aria-selected="true">
-              <div class="row">
-                <div class="col-1 mx-2">
-                  <img src="img/secteurs-activites/picto-erp.svg" alt="">
-                </div>
-                <div class="col-8">
-                  <h5 class="flex-grow-1">ERP - Habitation                                                 
-                    - ADS</h5>
+            <a class="nav-link active bg-transparent nav-secteur p-1" id="v-pills-erp-tab" data-bs-toggle="pill"
+              href="#nav-erp" role="tab" data-bs-target=".erp" aria-controls="#nav-erp" aria-selected="true">
+              <div class="d-flex gap-2">
+                <i class="picto picto-erp"></i>
+                <div>
+                  <h5>ERP - Habitation - ADS</h5>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque corrupti iure fugiat                                                 
-                    accusantium
-                    sapiente repellat, consecteturc.
+                    Lorem ipsum dolor sit amet consectetur. Rhoncus augue ultrices leo mauris vel fames cursus
+                    ridiculus
+                    vel.
+                    Molestie volutpat sodales suscipit enim amet.
                   </p>
                 </div>
-                <div class="col-1 d-flex align-items-center">
+                <div class="arrow-right d-flex align-items-center justify-content-end">
                   <i class="bi bi-arrow-right-square-fill fs-4"></i>
                 </div>
               </div>
             </a>
 
-            <a
-              class="nav-link bg-transparent nav-secteur"
-              id="v-pills-deci-tab"
-              data-bs-toggle="pill"
-              href="#nav-deci"
-              role="tab"
-              data-bs-target=".deci"
-              aria-controls="#nav-deci"
-              aria-selected="false">
-              <div class="row">
-                <div class="col-1 mx-2">
-                  <img src="img/secteurs-activites/picto-deci.svg" alt="">
-                </div>
-                <div class="col-8">
-                  <h5 class="flex-grow-1">DECI                                                 
-                    - ADS</h5>
+            <a class="nav-link bg-transparent nav-secteur p-1" id="v-pills-deci-tab" data-bs-toggle="pill"
+              href="#nav-deci" role="tab" data-bs-target=".deci" aria-controls="#nav-deci" aria-selected="false">
+              <div class="d-flex gap-2">
+                <i class="picto picto-deci"></i>
+                <div>
+                  <h5>DECI - ADS</h5>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque corrupti iure fugiat                                                 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque corrupti iure fugiat
                     accusantium
                     sapiente repellat, consecteturc.
                   </p>
                 </div>
-                <div class="col-1 d-flex align-items-center">
+                <div class="arrow-right d-flex align-items-center justify-content-end">
                   <i class="bi bi-arrow-right-square-fill fs-4"></i>
                 </div>
               </div>
             </a>
 
-            <a
-              class="nav-link bg-transparent nav-secteur"
-              id="v-pills-icpe-tab"
-              data-bs-toggle="pill"
-              href="#nav-icpe"
-              role="tab"
-              data-bs-target=".icpe"
-              aria-controls="#nav-icpe"
-              aria-selected="false">
-              <div class="row">
-                <div class="col-1 mx-2">
-                  <img src="img/secteurs-activites/picto-icpe.svg" alt="">
-                </div>
-                <div class="col-8">
-                  <h5 class="flex-grow-1">ICPE - Industrie
-                  </h5>
+            <a class="nav-link bg-transparent nav-secteur p-1" id="v-pills-icpe-tab" data-bs-toggle="pill"
+              href="#nav-icpe" role="tab" data-bs-target=".icpe" aria-controls="#nav-icpe" aria-selected="false">
+              <div class="d-flex gap-2">
+                <i class="picto picto-icpe"></i>
+                <div>
+                  <h5>ICPE - Industrie</h5>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque corrupti iure fugiat                                                 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque corrupti iure fugiat
                     accusantium
                     sapiente repellat, consecteturc.
                   </p>
                 </div>
-                <div class="col-1 d-flex align-items-center">
+                <div class="arrow-right d-flex align-items-center justify-content-end">
                   <i class="bi bi-arrow-right-square-fill fs-4"></i>
                 </div>
               </div>
             </a>
 
-            <a
-              class="nav-link bg-transparent nav-secteur"
-              id="v-pills-manif-tab"
-              data-bs-toggle="pill"
-              href="#nav-manif"
-              role="tab"
-              data-bs-target=".manif"
-              aria-controls="#nav-manif"
-              aria-selected="false">
-              <div class="row">
-                <div class="col-1 mx-2">
-                  <img src="img/secteurs-activites/picto-manif.svg" alt="">
-                </div>
-                <div class="col-9">
-                  <h5 class="flex-grow-1">Manifestation -                                                 
-                    Rassemblement</h5>
+            <a class="nav-link bg-transparent nav-secteur p-1" id="v-pills-manif-tab" data-bs-toggle="pill"
+              href="#nav-manif" role="tab" data-bs-target=".manif" aria-controls="#nav-manif" aria-selected="false">
+              <div class="d-flex gap-2">
+                <i class="picto picto-manif align-self-start"></i>
+                <div>
+                  <h5>Manifestation - Rassemblement</h5>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque corrupti iure fugiat                                                 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque corrupti iure fugiat
                     accusantium
                     sapiente repellat, consecteturc.
                   </p>
                 </div>
-                <div class="col-1 d-flex align-items-center">
+                <div class="arrow-right d-flex align-items-center justify-content-end">
                   <i class="bi bi-arrow-right-square-fill fs-4"></i>
                 </div>
               </div>
@@ -451,28 +365,29 @@ order: 1
           </div>
 
         </div>
-        <div class="col-xl-6 pb-3 pt-5 mt-5 d-none d-xl-block">
+
+        <div class="col-xl-6 pb-3 mt-8 d-none d-xl-block">
           <div class="tab-content" id="v-pills-tabContent">
-            <div
-              class="tab-pane fade show active erp"
-              id="nav-erp"
-              role="tabpanel"
-              aria-labelledby="v-pills-erp-tab"></div>
-            <div
-              class="tab-pane fade deci"
-              id="nav-deci"
-              role="tabpanel"
-              aria-labelledby="v-pills-deci-tab"></div>
-            <div
-              class="tab-pane fade icpe"
-              id="nav-icpe"
-              role="tabpanel"
-              aria-labelledby="v-pills-icpe-tab"></div>
-            <div
-              class="tab-pane fade manif"
-              id="nav-manif"
-              role="tabpanel"
-              aria-labelledby="v-pills-manif-tab"></div>
+            <div class="tab-pane fade show active erp" id="nav-erp"
+              style="background-image: url(/img/secteurs-activites/erp.svg);" role="tabpanel"
+              aria-labelledby="v-pills-erp-tab">
+              <img src="img/secteurs-activites/erp.svg" style="visibility: hidden;" />
+            </div>
+            <div class="tab-pane fade deci" id="nav-deci"
+              style="background-image: url(/img/secteurs-activites/deci.svg);" role="tabpanel"
+              aria-labelledby="v-pills-deci-tab">
+              <img src="img/secteurs-activites/deci.svg" style="visibility: hidden;" />
+            </div>
+            <div class="tab-pane fade icpe" id="nav-icpe"
+              style="background-image: url(/img/secteurs-activites/icpe.svg);" role="tabpanel"
+              aria-labelledby="v-pills-icpe-tab">
+              <img src="img/secteurs-activites/icpe.svg" style="visibility: hidden;" />
+            </div>
+            <div class="tab-pane fade manif" id="nav-manif"
+              style="background-image: url(/img/secteurs-activites/manif.svg);" role="tabpanel"
+              aria-labelledby="v-pills-manif-tab">
+              <img src="img/secteurs-activites/manif.svg" style="visibility: hidden;" />
+            </div>
           </div>
         </div>
 
@@ -483,26 +398,26 @@ order: 1
   <!-- CINQUIEME SECTION -->
   <!-- Carousel -->
   <!-- Un container-fluid -> une row -> une col btn previous -> une col avec les slides du carousel (postlists.liquid) -> une col btn next -> une row avec les buttons pour changer les slides -->
-  <section class="fithSection">
+  <section class="fifthSection">
     <div class="container-fluid px-5 pb-5">
-      <div class="d-flex align-items-center gap-4 pb-3 mt-5 pt-5">
-        <img
-          src="img/red-dot.svg"
-          class="red-dot"
-          alt="">
-        <h2 class="align-bottom">Les dernière nouveautés METARISC :</h2>
+      <div class="row mb-5 mx-lg-8">
+        <div class="col-xl-5">
+          <div class="d-flex pb-3 align-items-center gap-2">
+            <i class="picto-red-dot"></i>
+            <span class="fs-2">Les dernière nouveautés METARISC :</span>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="d-flex justify-content-end align-items-bottom pb-3 gap-2_5">
+            {% include "socialslist.liquid" %}
+          </div>
+        </div>
       </div>
 
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide mt-4"
-        data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
         <div class="row">
           <div class="col">
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev">
               <span aria-hidden="true">
                 <i class="bi bi-arrow-left-square-fill fs-4"></i>
@@ -516,29 +431,26 @@ order: 1
               {% assign nbSlides = postslist.length | divided_by: 3 | minus: 1 %}
               {% assign offsetNb = 0 %}
               {% for i in (0..nbSlides) %}
-                {% if i == 0 %}
-                  <div class="carousel-item active">
-                    <div class="d-xl-flex gap-4">
-                      {% include "postslist.liquid" %}
-                    </div>
-                  </div>
-                {% else %}
-                  <div class="carousel-item">
-                    <div class="d-xl-flex gap-4">
-                      {% include "postslist.liquid" %}
-                    </div>
-                  </div>
-                {% endif %}
-                {% assign offsetNb = offsetNb | plus: 3 %}
+              {% if i == 0 %}
+              <div class="carousel-item active">
+                <div class="d-xl-flex gap-4">
+                  {% include "postslist.liquid" %}
+                </div>
+              </div>
+              {% else %}
+              <div class="carousel-item">
+                <div class="d-xl-flex gap-4">
+                  {% include "postslist.liquid" %}
+                </div>
+              </div>
+              {% endif %}
+              {% assign offsetNb = offsetNb | plus: 3 %}
               {% endfor %}
             </div>
           </div>
 
           <div class="col">
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next">
               <span aria-hidden="true">
                 <i class="bi bi-arrow-right-square-fill fs-4"></i>
@@ -551,21 +463,13 @@ order: 1
           <div class="col mt-2">
             <div class="carousel-indicators gap-2">
               {% for i in (0..nbSlides) %}
-                {% if i == 0 %}
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="{{i}}"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide {{i | plus: 1}}"></button>
-                {% else %}
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="{{i}}"
-                    aria-label="Slide {{i | plus: 1}}"></button>
-                {% endif %}
+              {% if i == 0 %}
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{i}}" class="active"
+                aria-current="true" aria-label="Slide {{i | plus: 1}}"></button>
+              {% else %}
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{i}}"
+                aria-label="Slide {{i | plus: 1}}"></button>
+              {% endif %}
               {% endfor %}
 
             </div>
@@ -581,22 +485,20 @@ order: 1
   <!-- Un container -> une row -> une col avec un texte -> une col avec le bouton -->
   <!-- Problème avec les images "angle-dotted-lines.svg" pour les mettres dans les coins (inférieur gauche et supérieur droit) -->
   <section class="sixthSection">
-    <div class="container-md bg-snow-gray my-5 rounded contact">
+    <div class="container-md bg-snow-gray my-8 rounded contact">
       <div class="row h-100 align-items-center">
         <div class="d-flex">
-          <!--
-            <div class="bl-angle">  <img src="/img/angle-dotted-lines.svg" alt=""></div><div class="tr-angle">
-            <img src="/img/angle-dotted-lines.svg" alt="">
-          </div>
-          -->
+          {% comment %} <img src="/img/angle-dotted-lines.svg" class="bl-angle" alt="">
+          <img src="/img/angle-dotted-lines.svg" class="tr-angle" alt=""> {% endcomment %}
           <div class="col m-lg-3">
             <h3>Vous êtes intéressé par
               <span class="text-LPtoDH">METARISC</span>
-              ?</h3>
+              ?
+            </h3>
             <h3>Prenons contact !</h3>
           </div>
           <div class="col d-flex justify-content-center">
-            <a class="btn btn-danger btn-lg border border-light px-md-5 my-auto" href="mailto:metarisc@sdis62.fr">Nous                                                 
+            <a class="btn btn-LPtoDH btn-lg border border-light text-light px-md-5 my-auto" href="/contact">Nous
               contacter</a>
           </div>
         </div>
