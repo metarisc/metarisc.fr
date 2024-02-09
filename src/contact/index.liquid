@@ -1,0 +1,120 @@
+---
+layout: layouts/home.liquid
+eleventyNavigation:
+key: Contact
+order: 2
+---
+
+<section class="sectionContact">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-between">
+      
+      <div class="col-4 row-sm my-auto ms-8 ">
+        <i class="picto picto-dots"></i>
+        <h1 class="mt-5_5">Title</h1>
+        <p class="desc">
+          Un portail opérationnel unique conçu en mode SaaS, disponible à tout moment et en tout lieu, permettant de
+          collecter, enregistrer et consulter vos données de prévention et de prévision.
+        </p>
+
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex">
+            <div class="bg-snow px-1 me-3_5 rounded">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <p class="my-auto">03.21.21.81.36</p>
+          </div>
+          <div class="d-flex">
+            <i class="bi bi-envelope bg-snow px-1 me-3_5 rounded"></i>
+            <p class="my-auto">metarisc@sdis62.fr</p>
+          </div>
+          <div class="d-flex">
+            <i class="bi bi-geo-alt bg-snow px-1 me-3_5 rounded"></i>
+            <p class="my-auto">18, Rue René Cassin, Saint-Laurent-Blangy, Hauts-de-France 62223, FR</p>
+          </div>
+        </div>
+
+        <div class="d-flex mt-4_5 gap-1_5">
+          {% include "socialslist.liquid" %}
+        </div>
+      </div>
+
+      <div class="col-6 row-sm mt-8 me-8 resize">
+        <div class="container bg-snow rounded text-center">
+          <h3 class="my-5">Formulaire de contact</h3>
+          <form class="d-flex flex-column gap-3 p-2">
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <label for="formInputPrenom" class="form-label align-self-baseline input-required">Prenom :</label>
+                <input class="form-control bg-snow ps-2 p-1 mt-1" id="formInputPrenom" type="text"
+                  placeholder="Exemple : John">
+              </div>
+              <div class="col d-flex flex-column">
+                <label for="formInputNom" class="form-label align-self-baseline input-required">NOM :</label>
+                <input class="form-control bg-snow ps-2 p-1 mt-1" id="formInputNom" type="text"
+                  placeholder="Exemple : DOE">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <label for="formInputEmail" class="form-label align-self-baseline input-required">Adresse mail :</label>
+                <input class="form-control bg-snow ps-2 p-1 mt-1" id="formInputEmail" type="email"
+                  placeholder="Exemple : johndoe@mail.fr">
+              </div>
+              <div class="col d-flex flex-column">
+                <label for="formInputTel" class="form-label align-self-baseline input-required">Telephone :</label>
+                <input class="form-control bg-snow ps-2 p-1 mt-1" id="formInputTel" type="tel"
+                  placeholder="Exemple : 00.00.00.00.00">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <label for="formInputSecteurAct" class="form-label align-self-baseline">Secteur d'activité :</label>
+                <select class="form-select ps-2 p-1 mt-1" id="formInputSecteurAct" aria-label="Default select example">
+                  <option selected>Choisir un secteur d’activité</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col d-flex flex-column">
+                <label for="formInputEtablissement" class="form-label align-self-baseline">Etablissement / Société
+                  :</label>
+                <input class="form-control bg-snow ps-2 p-1 mt-1" id="formInputEtablissement" type="text"
+                  placeholder="Exemple : SDIS00">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <label for="formInputFonction" class="form-label" style="width: 0%;text-wrap:nowrap">Fonction :</label>
+                <input class="form-control bg-snow ps-2 p-1 mt-1" id="formInputFonction" type="text"
+                  placeholder="Exemple : Chef Prévention">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <label for="formInputMessage" class="form-label input-required"
+                  style="width: 0%;text-wrap:nowrap">Message
+                  :</label>
+                <textarea class="form-control bg-snow ps-2 p-1 mt-1" rows="5" id="formInputMessage"
+                  placeholder="Exemple :  Je souhaiterais prendre contact pour un rendez-vous avec le Directeur de projet METARISC..."></textarea>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <input class="btn-LPtoDH border-0 text-light py-1 mt-5 mb-4 rounded" type="submit"
+                  value="Envoyer le formulaire">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
