@@ -3,8 +3,6 @@ $secondary-color: #fff;
 
 @media (max-width: 768px) {
     span.switch-title {
-        display: flex;
-        justify-content: center;
         font-size: 0;
         right: -100%;
     }
@@ -42,14 +40,14 @@ $secondary-color: #fff;
                 width: 100%;
             }
 
-            .title {
+            .title, img {
                 font-size: 14px;
                 opacity: 0;
                 transition: 0.75s ease 0.25s;
             }
 
             &-active {
-                .title {
+                .title, img {
                     opacity: 1;
                 }
             }
@@ -102,6 +100,8 @@ $secondary-color: #fff;
                 display: block;
 
                 .switch-title {
+                    display: flex;
+                    justify-content: center;
                     position: absolute;
                     font-weight: 400;
 
