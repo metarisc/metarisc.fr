@@ -107,9 +107,9 @@ order: 1
           <div class="tab-content mx-lg-1" id="nav-tabContent">
 
             <div class="col tab-pane show active fade" id="portail" role="tabpanel" aria-labelledby="nav-portail-tab">
-              <h2>
+              <h5 class="fs-2">
                 <span class="text-LPtoDH">METARISC</span>, portail unique pour des risques multiples
-              </h2>
+              </h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum
                 turpis,
@@ -155,9 +155,9 @@ order: 1
             </div>
 
             <div class="col tab-pane fade" id="demat" role="tabpanel" aria-labelledby="nav-demat-tab">
-              <h2>
+              <h5 class="fs-2">
                 <span class="text-LPtoDH">METARISC</span>, portail unique pour des risques multiples
-              </h2>
+              </h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum
                 turpis,
@@ -188,10 +188,10 @@ order: 1
             </div>
 
             <div class="col tab-pane fade" id="securise" role="tabpanel" aria-labelledby="nav-securise-tab">
-              <h2>
+              <h5 class="fs-2">
                 <span class="text-LPtoDH">Lorem</span>
                 ipsum dolor sit amet consectetur adipisicing elit.
-              </h2>
+              </h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum
                 turpis,
@@ -233,10 +233,10 @@ order: 1
             </div>
 
             <div class="col tab-pane fade" id="club" role="tabpanel" aria-labelledby="nav-club-tab">
-              <h2>
+              <h5 class="fs-2">
                 <span class="text-LPtoDH">Lorem</span>
                 ipsum dolor sit, amet consectetur adipisicing elit.
-              </h2>
+              </h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet turpis. Donec ipsum
                 turpis,
@@ -408,7 +408,7 @@ order: 1
           </div>
         </div>
         <div class="col-xl-6">
-          <div class="d-flex justify-content-end align-items-bottom pb-3 gap-2_5">
+          <div class="d-xl-flex d-none justify-content-end align-items-bottom pb-3 gap-2_5">
             {% include "socialslist.liquid" %}
           </div>
         </div>
@@ -432,14 +432,14 @@ order: 1
               {% assign offsetNb = 0 %}
               {% for i in (0..nbSlides) %}
               {% if i == 0 %}
-              <div class="carousel-item active">
-                <div class="d-xl-flex gap-4">
+              <div class="carousel-item active justify-content-center">
+                <div class="d-md-flex gap-4">
                   {% include "postslist.liquid" %}
                 </div>
               </div>
               {% else %}
               <div class="carousel-item">
-                <div class="d-xl-flex gap-4">
+                <div class="d-md-flex gap-4">
                   {% include "postslist.liquid" %}
                 </div>
               </div>
@@ -485,24 +485,8 @@ order: 1
   <!-- Un container -> une row -> une col avec un texte -> une col avec le bouton -->
   <!-- Problème avec les images "angle-dotted-lines.svg" pour les mettres dans les coins (inférieur gauche et supérieur droit) -->
   <section class="sixthSection">
-    <div class="container-md bg-snow-gray my-8 rounded contact">
-      <div class="row h-100 align-items-center">
-        <div class="d-flex">
-          {% comment %} <img src="/img/angle-dotted-lines.svg" class="bl-angle" alt="">
-          <img src="/img/angle-dotted-lines.svg" class="tr-angle" alt=""> {% endcomment %}
-          <div class="col m-lg-3">
-            <h3>Vous êtes intéressé par
-              <span class="text-LPtoDH">METARISC</span>
-              ?
-            </h3>
-            <h3>Prenons contact !</h3>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <a class="btn btn-LPtoDH btn-lg border border-light text-light px-md-5 my-auto" href="/contact">Nous
-              contacter</a>
-          </div>
-        </div>
-      </div>
+    <div class="row w-75 mx-auto">
+      {% include "contactRow.liquid" %}
     </div>
   </section>
 
