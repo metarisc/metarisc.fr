@@ -1,73 +1,77 @@
-.nav-pills {
+.fourthSection {
+  .nav-pills {
 
-  h5 {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-  }
-
-  a {
-    color: white;
-    width: fit-content;
-    height: fit-content;
-
-    &:hover,
-    &:focus {
-      background: rgba(255, 255, 255, 0.16) !important;
-      color: white;
+    h5 {
+      font-size: 20px;
+      line-height: 24px;
     }
 
-    &.active {
-      border: 1px solid #fff !important;
-      background: rgba(255, 255, 255, 0.24) !important;
-      box-shadow: 0px 0.918px 7.342px 0px rgba(94, 94, 94, 0.07) !important;
-      backdrop-filter: blur(12px) !important;
-      font-weight: 600;
-      line-height: 24px;
-      transition: all 250ms ease-in;
-
-      p {
-        font-size: 15px;
-        line-height: 24px;
-      }
-
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: -2rem;
-        right: -2rem;
-        border-left: 2px solid white;
-        z-index: -2;
-      }
+    a {
+      color: white;
+      width: fit-content;
+      height: fit-content;
 
       &:hover,
       &:focus {
-        background: rgba(255, 255, 255, 0.32) !important;
-        transform: scaleX(1.01);
+        background: rgba(255, 255, 255, 0.16) !important;
+        color: white;
       }
 
-      &:not(:hover) {
-        transform: scaleX(1);
+      &.active {
+        border: 1px solid #fff !important;
         background: rgba(255, 255, 255, 0.24) !important;
+        box-shadow: 0px 0.918px 7.342px 0px rgba(94, 94, 94, 0.07) !important;
+        backdrop-filter: blur(12px) !important;
+        line-height: 24px;
+        transition: all 250ms ease-in;
+
+        h5 {
+          font-weight: 400;
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 24px;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -2rem;
+          right: -2rem;
+          border-left: 2px solid white;
+          z-index: -2;
+        }
+
+        &:hover,
+        &:focus {
+          background: rgba(255, 255, 255, 0.32) !important;
+          transform: scaleX(1.01);
+        }
+
+        &:not(:hover) {
+          transform: scaleX(1);
+          background: rgba(255, 255, 255, 0.24) !important;
+        }
+      }
+
+      &:not(.active) .arrow-right {
+        display: none !important;
       }
     }
+  }
 
-    &:not(.active) .arrow-right {
-      display: none !important;
+  #v-pills-tabContent {
+    width: min-content;
+    height: min-content;
+
+    .tab-pane {
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      box-shadow: -2px 8px 8px 0px rgba(255, 255, 255, 0.24), -3px -1px 4px 0px rgba(255, 255, 255, 0.25);
     }
+
   }
-}
-
-#v-pills-tabContent {
-  width: min-content;
-  height: min-content;
-
-  .tab-pane {
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    box-shadow: -2px 8px 8px 0px rgba(255, 255, 255, 0.24), -3px -1px 4px 0px rgba(255, 255, 255, 0.25);
-  }
-
 }

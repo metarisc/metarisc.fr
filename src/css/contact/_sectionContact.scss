@@ -11,14 +11,10 @@
         font-size: 30px;
     }
 
-    .desc {
-        text-align: justify;
-    }
-
     form {
         .form-control, .form-control::placeholder {
             color: white;
-            font-weight: 400 !important;
+            font-weight: 300 !important;
         }
 
         .form-select {
@@ -29,7 +25,9 @@
             color: white;
             appearance: none;
             background-image: url("../img/arrow-down.svg");
-            background-size: 8px 7px ;
+            background-size: 8px 7px;
+            font-weight: 300;
+
         }
 
         .input-required::before {
