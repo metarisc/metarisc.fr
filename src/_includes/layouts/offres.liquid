@@ -1,0 +1,38 @@
+---
+layout: layouts/home.liquid
+---
+
+<section class="sectionOffres">
+
+    <div class="d-flex justify-content-center mt-2 mb-5 fs-4">
+        <nav>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url == "/offres/sis/" %} active {% endif %}" href="/offres/sis/" id="nav-sis-tab"
+                        data-bs-target="#sis" role="tab" aria-controls="#sis" aria-selected="true">SIS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url == "/offres/collectivites/" %} active {% endif %}" href="/offres/collectivites/" id="nav-collectivites-tab" 
+                        data-bs-target="#collectivites" role="tab" aria-controls="#collectivites"
+                        aria-selected="false">Collectivités</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url == "/offres/prefectures/" %} active {% endif %}" href="/offres/prefectures/" id="nav-prefectures-tab"
+                        data-bs-target="#prefectures" role="tab" aria-controls="#prefectures"
+                        aria-selected="false">Préfectures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url == "/offres/gestionnaires-eaux/" %} active {% endif %}" href="/offres/gestionnaires-eaux/" id="nav-gest-eau-tab"
+                        data-bs-target="#gest-eau" role="tab" aria-controls="#gest-eau"
+                        aria-selected="false">Gestionnaires des eaux</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    {{content}}
+    
+    <div class="row w-75 mx-auto">
+        {% include "contactRow.liquid" %}
+    </div>
+</section>

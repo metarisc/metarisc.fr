@@ -1,0 +1,151 @@
+[
+    {
+        "type": "communes",
+        "label": "< 3500 hab",
+        "price": "300€ / an",
+        "options": [
+            {
+                "name": "Collec +",
+                "price": "200€ / an (TTC)",
+                "caracteristiques": [
+                    "ADS",
+                    "Schémas communaux DECI",
+                    "Gestion commissions sécurité ERP",
+                    "Manifestations et rassemblements (offert)"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "communes",
+        "label": "< 20 000 hab",
+        "price": "500€ / an",
+        "options": [
+            {
+                "name": "Collec +",
+                "price": "300€ / an (TTC)",
+                "caracteristiques": [
+                    "ADS",
+                    "Schémas communaux DECI",
+                    "Gestion commissions sécurité ERP",
+                    "Manifestations et rassemblements (offert)"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "communes",
+        "label": "> 20 000 hab",
+        "price": "800€ / an",
+        "options": [
+            {
+                "name": "Collec +",
+                "price": "200€ / an (TTC)",
+                "caracteristiques": [
+                    "ADS",
+                    "Schémas communaux DECI",
+                    "Gestion commissions sécurité ERP"
+                ]
+            },
+            {
+                "name": "Manifestation",
+                "price": "300€ / an (TTC)",
+                "caracteristiques": [
+                    "Manifestations et rassemblements"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "EPCI",
+        "label": "Communauté de communes",
+        "price": "1200€ / an",
+        "options": [
+            {
+                "name": "Collec +",
+                "price": "800€ / an (TTC)",
+                "caracteristiques": [
+                    "ADS",
+                    "Schémas communaux DECI",
+                    "Gestion commissions sécurité ERP"
+                ]
+            },
+            {
+                "name": "Manifestation",
+                "price": "800€ / an (TTC)",
+                "caracteristiques": [
+                    "Manifestations et rassemblements"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "EPCI",
+        "label": "Communauté d'agglomération",
+        "price": "2000€ / an",
+        "options": [
+            {
+                "name": "Collec +",
+                "price": "1000€ / an (TTC)",
+                "caracteristiques": [
+                    "ADS",
+                    "Schémas communaux DECI",
+                    "Gestion commissions sécurité ERP"
+                ]
+            },
+            {
+                "name": "Manifestation",
+                "price": "1000€ / an (TTC)",
+                "caracteristiques": [
+                    "Manifestations et rassemblements"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "EPCI",
+        "label": "CU",
+        "price": "3000€ / an",
+        "options": [
+            {
+                "name": "Collec +",
+                "price": "1500€ / an (TTC)",
+                "caracteristiques": [
+                    "ADS",
+                    "Schémas communaux DECI",
+                    "Gestion commissions sécurité ERP"
+                ]
+            },
+            {
+                "name": "Manifestation",
+                "price": "1500€ / an (TTC)",
+                "caracteristiques": [
+                    "Manifestations et rassemblements"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "EPCI",
+        "label": "Métropole",
+        "price": "4000€ / an",
+        "options": [
+            {
+                "name": "Collec +",
+                "price": "2000€ / an (TTC)",
+                "caracteristiques": [
+                    "ADS",
+                    "Schémas communaux DECI",
+                    "Gestion commissions sécurité ERP"
+                ]
+            },
+            {
+                "name": "Manifestation",
+                "price": "2000€ / an (TTC)",
+                "caracteristiques": [
+                    "Manifestations et rassemblements"
+                ]
+            }
+        ]
+    }
+]

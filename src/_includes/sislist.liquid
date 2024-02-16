@@ -1,0 +1,29 @@
+{% for sis in sis[0] %}
+<div class="col offre offre-sis">
+    <a href="#" class="text-decoration-none">
+        <div class="card bg-snow-gray border-0 mb-3">
+            <div class="card-header d-flex justify-content-center align-items-center bg-LPtoDH text-light">
+                <span class="fs-4">Offre SIS de catégorie {{sis.category}}</span>
+            </div>
+            <div class="card-body">
+                <p class="card-title d-flex justify-content-center fs-4 text-LPtoDH">{{sis.price}}</p>
+                <p class="card-text">
+                <ul class="d-flex flex-column gap-2">
+                    {% for carac in sis.caracteristiques %}
+                    <li>{{carac.name}}</li>
+                    {% endfor %}
+                </ul>
+                </p>
+                <div class="divider"></div>
+                <div class="card-footer bg-transparent">
+                    {% for option in sis.options %}
+                    {{option.name}} =
+                    <strong>{{option.value}}</strong>
+                    <br>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+{% endfor %}

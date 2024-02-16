@@ -1,0 +1,114 @@
+[
+    [
+        {
+            "category": "A",
+            "price": "25 000€ / an",
+            "caracteristiques": [
+                {
+                    "name": "Intègre la maintenance"
+                },
+                {
+                    "name": "Inclus les modules de Prévention : ERP, habitation, Industrie, Manifestation et Rassemblements"
+                },
+                {
+                    "name": "Inclus les modules de Prévision : "
+                },
+                {
+                    "name": "Support ticket"
+                },
+                {
+                    "name": "Stockage 500G"
+                }
+            ],
+            "options": [
+                {
+                    "name": "Stockage supplémentaire",
+                    "value": "140€/500G"
+                },
+                {
+                    "name": "Support premium",
+                    "value": "3000€"
+                }
+            ]
+        },
+        {
+            "category": "B",
+            "price": "20 000€ / an",
+            "caracteristiques": [
+                {
+                    "name": "Intègre la maintenance"
+                },
+                {
+                    "name": "Inclus les modules de Prévention : ERP, habitation, Industrie, Manifestation et Rassemblements"
+                },
+                {
+                    "name": "Inclus les modules de Prévision : "
+                },
+                {
+                    "name": "Support ticket"
+                },
+                {
+                    "name": "Stockage 500G"
+                }
+            ],
+            "options": [
+                {
+                    "name": "Stockage supplémentaire",
+                    "value": "140€/500G"
+                },
+                {
+                    "name": "Support premium",
+                    "value": "3000€"
+                }
+            ]
+        },
+        {
+            "category": "C",
+            "price": "15 000€ / an",
+            "caracteristiques": [
+                {
+                    "name": "Intègre la maintenance"
+                },
+                {
+                    "name": "Inclus les modules de Prévention : ERP, habitation, Industrie, Manifestation et Rassemblements"
+                },
+                {
+                    "name": "Inclus les modules de Prévision : "
+                },
+                {
+                    "name": "Support ticket"
+                },
+                {
+                    "name": "Stockage 500G"
+                }
+            ],
+            "options": [
+                {
+                    "name": "Stockage supplémentaire",
+                    "value": "140€/500G"
+                },
+                {
+                    "name": "Support premium",
+                    "value": "2400€"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "name": "Intègre la maintenance"
+        },
+        {
+            "name": "Inclus les modules de Prévention : ERP, habitation, Industrie, Manifestation et Rassemblements"
+        },
+        {
+            "name": "Inclus les modules de Prévision : "
+        },
+        {
+            "name": "Support ticket"
+        },
+        {
+            "name": "Stockage 500G"
+        }
+    ]
+]

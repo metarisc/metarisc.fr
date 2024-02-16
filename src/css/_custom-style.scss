@@ -6,9 +6,11 @@
 @use "global/base";
 @use "global/footer";
 @use "global/navbar";
+@use "global/contactRow";
 
 @use "contact/sectionContact";
 
+@use "offres/sectionOffres";
 @use "home/firstSection";
 @use "home/secondSection";
 @use "home/thirdSection";
