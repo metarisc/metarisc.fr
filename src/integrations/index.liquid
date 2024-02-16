@@ -1,27 +1,32 @@
 ---
 layout: layouts/home.liquid
 eleventyNavigation:
-  key: Integrations
-  order: 2
+key: Integrations
+order: 2
 ---
 
-<div class="text-center">
-    <img src="/img/metadome-connected.png" height="100" class="d-inline-block" alt="">
-    <h1 class="fw-bold text-center">Une plateforme ouverte. Des possibilités infinies.</h1>
-</div>
+<section class="sectionIntegration">
+    <div class="container my-3">
+        <div class="text-center">
+            <img src="/img/metadome-connected.png" height="100" class="d-inline-block" alt="">
+            <h1 class="fw-bold text-center">Une plateforme ouverte. Des possibilités infinies.</h1>
+        </div>
 
-<p class="lead text-center text-secondary">
-    Améliorez votre expérience Metarisc avec une grande variété de modules complémentaires et d'intégrations.<br>
-    De tâches essentielles du quotidien jusqu'à des flux de travail complexes et exigeants.
-</p>
+        <p class="lead text-center">
+            Améliorez votre expérience Metarisc avec une grande variété de modules complémentaires et
+            d'intégrations.<br>
+            De tâches essentielles du quotidien jusqu'à des flux de travail complexes et exigeants.
+        </p>
 
-{% include "integrationslist.liquid" %}
+        {% include "integrationslist.liquid" %}
 
-<div class="text-center mt-5">
-    <h3 class="fw-bold">Construisez votre propre intégration</h3>
-    <p class="text-secondary text-small">
-        Créez votre propre intégration avec l'API Metarisc, et interconnectez votre système d'information.
-    </p>
-    <a class="btn btn-primary" href="/docs/api">Constuire une intégration</a>
-</div>
+        <div class="text-center mt-5">
+            <h3 class="fw-bold">Construisez votre propre intégration</h3>
+            <p class="text-small">
+                Créez votre propre intégration avec l'API Metarisc, et interconnectez votre système d'information.
+            </p>
+            <a class="btn btn-primary btn-lagoon border-0" href="/docs/api">Constuire une intégration</a>
+        </div>
+    </div>
 
+</section>
