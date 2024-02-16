@@ -1,0 +1,126 @@
+---
+layout: layouts/home.liquid
+eleventyNavigation:
+key: propos
+order: 2
+---
+
+<div class="bg-gray">
+    <section class="sectionPropos">
+        <div class="container-fluid m-5">
+            <div class="row">
+                <div class="col d-flex flex-column gap-5">
+                    <div class="d-flex pb-3 align-items-center gap-2">
+                        <i class="picto-red-dot"></i>
+                        <span class="fs-2">Qui sommes nous ?</span>
+                    </div>
+                    <div class="col me-5">
+                        <p>Depuis près de 15 ans le SDIS 62 a développé en interne une solution logicielle – PREVARISC –
+                            dédiée aux métiers de la prévention (ERP et habitation). De nombreux services d’incendie et
+                            de secours (SIS) de France ont depuis opté pour cette solution. Toutefois, les évolutions
+                            réglementaires et technologiques nous imposent de redéfinir les attentes du collectif des
+                            SIS et les réponses susceptibles d’être portées par le nouveau logiciel métier qui
+                            remplacera avantageusement PREVARISC.  Après ce premier constat est venu s’ajouter le besoin
+                            d’un meilleur outil de gestion des services Prévision-DECI, prévention industrielle, mais
+                            aussi pour la prévention des risques sociaux liés aux grands rassemblements.
+                        </p>
+                        <p>La décision est prise de développer une solution globale : METARISC.
+                        </p>
+                        <p>Pour porter cette ambition, le SDIS 62 s’est associé à la ville de Marseille et au Bataillon
+                            des marins pompiers de Marseille (BMPM) en février 2022.
+                        </p>
+                        <p>Depuis, une équipe projet bicéphale œuvre en régie au développement du logiciel METARISC.
+                        </p>
+                        <p>Pour autant le SDIS 62 et le BMPM n’ont ni la vocation, ni les ressources, pour supporter sur
+                            le long terme le développement, le déploiement, la maintenance et l’animation du réseau des
+                            futurs utilisateurs METARISC.
+                        </p>
+                        <p>Dès lors, le SDIS 62 et le BMPM ont décidé de confier le logiciel à une structure juridique
+                            susceptible d’assurer ces missions et de garantir la satisfaction de ses utilisateurs.
+                        </p>
+                        <p>A l’issue d’une mission d’expertise juridique confiée à un cabinet d’avocat, il a été décidé
+                            de créer un groupement d’intérêt public (GIP) à l’initiative des deux membres fondateurs :
+                            SDIS 62 et BMPM. </p>
+                    </div>
+                    <div class="d-flex pb-3 align-items-center gap-2">
+                        <i class="picto-red-dot"></i>
+                        <span class="fs-2">Notre mission</span>
+                    </div>
+                    <div class="col me-5">
+                        <p>Le GIP METARISC a vocation à répondre aux besoins applicatifs des métiers des services
+                            d’incendie et de secours.</p>
+                        <p>Ainsi, par le biais d’une contribution annuelle, les membres adhèrent au GIP et accèdent à
+                            l’ensemble des solutions et services portés par le GIP et développés au bénéfice de ses
+                            membres.</p>
+                        <p>Les membres du GIP créent de fait « la communauté METARISC » et le GIP s’engage à faire
+                            évoluer le produit au fil des évolutions réglementaires, technologiques et expressions de
+                            besoins nouveaux formulés par ses membres, dans une logique mutualiste et participative.</p>
+                    </div>
+                    <div class="d-flex pb-3 align-items-center gap-2">
+                        <i class="picto-red-dot"></i>
+                        <span class="fs-2">Nos valeurs</span>
+                    </div>
+                    <div class="col me-5">
+                        <p><strong>Sécurité et prévention :</strong> Priorité absolue donnée au développement de la
+                            sécurité du public, avec un engagement fort envers la prévention des risques.</p>
+
+                        <p><strong>Innovation et excellence :</strong> Engagement en faveur de l'innovation
+                            technologique et
+                            opérationnelle pour améliorer l'efficacité des interventions et la gestion des ressources.
+                        </p>
+                        <p><strong>Collaboration et partenariat :</strong> Valorisation du travail d'équipe, de la
+                            collaboration
+                            inter-services et du partenariat avec d'autres organismes.</p>
+                        <p><strong>Adaptabilité et réactivité :</strong> Capacité à s'adapter rapidement aux nouvelles
+                            informations, aux
+                            évolutions réglementaires.</p>
+                    </div>
+                    <div class="d-flex pb-3 align-items-center gap-2">
+                        <i class="picto-red-dot"></i>
+                        <span class="fs-2">Notre vision pour le futur</span>
+                    </div>
+                    <div class="col me-5">
+                        <p>A moyen terme, le membre fondateur SDIS 62 prévoit de verser au catalogue d’offre et de
+                            services un second progiciel - déjà développé - susceptible de compléter le périmètre du
+                            progiciel METARISC.</p>
+                        <p>En effet, le logiciel MOBILCOS dédié à l’alerte et au déclenchement de la chaîne de
+                            commandement opérationnelle gagnerait à s’enrichir des données produites par METARISC.
+                        </p>
+                        <p>Une synergie est attendue de cette intégration de logiciels.
+                        </p>
+                        <p>Par ailleurs, nativement interconnectable (API) à d’autres solutions d’éditeur liées aux
+                            métiers de la sécurité civile, METARISC pourra à moyen terme intégrer des modules optionnels
+                            et supplémentaires proposés par des partenaires qui souhaiteraient intégrer l’écosystème
+                            METARISC. </p>
+                    </div>
+                    <div class="d-flex pb-3 align-items-center gap-2">
+                        <i class="picto-red-dot"></i>
+                        <span class="fs-2">Une road map maitrisée </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mb-5">
+            <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
+
+                <!-- Timeline -->
+                <ul class="swiper-pagination-custom p-0 mt-5">
+                    {% include "roadmapDatelist.liquid" %}
+                </ul>
+
+                <!-- Progressbar -->
+                <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+
+                <!-- Swiper -->
+                <div class="swiper swiper-container swiper-container--timeline">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        {% include "roadmapEventlist.liquid" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>

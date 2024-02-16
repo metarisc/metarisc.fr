@@ -1,0 +1,13 @@
+{% assign i = 0 %}
+{% assign taille = timeline.length | minus: 1 %}
+{% for event in timeline %}
+    {% assign classesName = "" %}
+    {% if i == 0 %}
+        {% assign classesName = "first active" %}
+    {% endif %}
+    {% if i == taille %}
+        {% assign classesName = "last" %}
+    {% endif %}
+    {% assign i = i | plus: 1 %}
+    <li class='swiper-pagination-switch {{classesName}}'><span class='switch-title text-wrap' style="width: 140px;">{{event.date}}</span></li>
+{% endfor %}

@@ -1,0 +1,17 @@
+{% for event in timeline %}
+<div class="swiper-slide">
+    <div class="d-flex">
+        <div class="d-none d-lg-flex align-items-center">
+            <img src="{{event.img_url | url}}" width="345" alt="">
+        </div>
+        <span class="title p-3">
+            <div class="mb-1_5">
+                <span class="fs-2 mb-2">{{event.name}}</span>
+                <div class='justify'>
+                    {{event.text}}
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
+{% endfor %}
