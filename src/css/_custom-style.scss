@@ -11,12 +11,18 @@
 @use "contact/sectionContact";
 
 @use "offres/sectionOffres";
+
+@use "integrations/sectionIntegration";
+
+@use "propos/sectionPropos";
+
+@use "solution/sectionSolution";
+
 @use "home/firstSection";
 @use "home/secondSection";
 @use "home/thirdSection";
 @use "home/fourthSection";
 @use "home/fifthSection";
-@use "home/sixthSection";
 
 
 $spacer: 0.5rem;

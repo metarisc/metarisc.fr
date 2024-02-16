@@ -1,0 +1,29 @@
+$lagoon: linear-gradient(90deg, #4EB9A8 0%, #4EB9A8 0.01%, #09806D 100%);
+
+.sectionSolution {
+    .card {
+        i {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+        }
+    }
+
+    .nav-pills {
+        a.nav-link {
+            color: white;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        a.nav-link.active {
+            background: $lagoon;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-left: 2px solid white;
+            border-radius: 3px;
+            border-width: 3px;
+        }
+    }
+}
