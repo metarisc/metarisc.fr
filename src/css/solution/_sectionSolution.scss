@@ -14,16 +14,19 @@ $lagoon: linear-gradient(90deg, #4EB9A8 0%, #4EB9A8 0.01%, #09806D 100%);
             color: white;
             width: fit-content;
             height: fit-content;
+            transition: transform 250ms;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+
+            &.active {
+                transform: scale(1.1);
+                border-left: 2px solid white;
+                border-radius: 3px;
+                border-width: 3px;
+            }
         }
 
-        a.nav-link.active {
-            background: $lagoon;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            border-left: 2px solid white;
-            border-radius: 3px;
-            border-width: 3px;
-        }
     }
 }

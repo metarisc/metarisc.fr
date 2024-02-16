@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Cartographie",
+        "text": "METARISC permet de gérer des objets géographiques et de renseigner automatiquement vos SIG. Ces objets géographiques sont directement connectés aux dossiers liés aux modules fonctionnels."
+    },
+    {
+        "title": "Dématérialisation",
+        "text": "METARISC intègre de manière intrinsèque la connexion avec PLAT'AU (Plateforme des Autorisations d'Urbanisme), permettant une interopérabilité fluide et directe. Le partage automatique et sécurisé des informations et des documents entre les deux systèmes facilite la conformité aux exigences légales et réglementaires."
+    },
+    {
+        "title": "Amélioration de l'Expérience Utilisateur",
+        "text": "METARISC permet aux utilisateurs de naviguer facilement et intuitivement grâce à une interface utilisateur conçue pour rendre l'application plus intuitive et facile à utiliser. Cet aspect technique n'est pas seulement une caractéristique de commodité mais un élément stratégique renforçant l'efficacité, l'accessibilité et la performance de l'application."
+    }
+]
