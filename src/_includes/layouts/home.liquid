@@ -36,54 +36,30 @@ layout: layouts/base.liquid
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#">Lorem</a>
+              <a class="dropdown-item" href="/gip/propos">A propos</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Lorem</a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown px-2">
-          <a
-            class="nav-link dropdown-toggle text-light"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Solution
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">Lorem</a>
+              <a class="dropdown-item" href="/gip/adherer">Adhérer</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Lorem</a>
+              <a class="dropdown-item" href="/gip/membres">Les membres</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/gip/equipes">Les équipes</a>
             </li>
           </ul>
         </li>
 
         <li class="nav-item px-2">
-          <a class="nav-link text-light" href="#">Intégration</a>
+          <a class="nav-link text-light" href="/solution">Solution</a>
         </li>
 
-        <li class="nav-item dropdown px-2">
-          <a
-            class="nav-link dropdown-toggle text-light"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Offres
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">Lorem</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Lorem</a>
-            </li>
-          </ul>
+        <li class="nav-item px-2">
+          <a class="nav-link text-light" href="/integrations">Intégrations</a>
+        </li>
+
+        <li class="nav-item px-2">
+          <a class="nav-link text-light" href="/offres/sis">Offres</a>
         </li>
 
         <li class="nav-item dropdown px-2">
@@ -97,10 +73,10 @@ layout: layouts/base.liquid
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#">Lorem</a>
+              <a class="dropdown-item" href="#">Communauté</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Lorem</a>
+              <a class="dropdown-item" href="#">Blog</a>
             </li>
           </ul>
         </li>
@@ -111,8 +87,7 @@ layout: layouts/base.liquid
 
         <li class="nav-item my-auto px-2">
           <a
-            class="btn btn-sm btn-lagoon text-light border-0 px-1_5 py-1"
-            style="font-size: 14px;border-radius: 8px;"
+            class="btn btn-sm btn-lagoon text-light rounded border-0 px-1_5 py-1"
             href="https://app.metarisc.fr"
             target="_blank">
             Accéder à l'application
@@ -129,7 +104,7 @@ layout: layouts/base.liquid
 
   <div class="container-fluid page-footer text-light position-relative" style="background-color: #36393d">
     <div class="container-fluid w-75">
-      <footer class="row  py-4 my-4">
+      <footer class="row mt-4">
         <div class="col mb-3 d-none d-xl-block">
           <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
             <img
@@ -148,16 +123,16 @@ layout: layouts/base.liquid
           </h5>
           <ul class="nav flex-column m-2 gap-1_5">
             <li class="nav-item">
-              <a href="#" class="nav-link text-light p-0">À propos</a>
+              <a href="/gip/propos" class="nav-link text-light p-0">À propos</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-light p-0">Adhérer</a>
+              <a href="/gip/adherer" class="nav-link text-light p-0">Adhérer</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-light p-0">Les membres</a>
+              <a href="/gip/membres" class="nav-link text-light p-0">Les membres</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-light p-0">Les équipes</a>
+              <a href="/gip/equipes" class="nav-link text-light p-0">Les équipes</a>
             </li>
           </ul>
           <h5 class="pt-3">
@@ -167,7 +142,7 @@ layout: layouts/base.liquid
         <div class="divider d-block d-sm-none my-3"></div>
         <div class="col mb-lg-3">
           <h5>
-            <a href="#" class="nav-link text-light p-0">Solution</a>
+            <a href="/solution" class="nav-link text-light p-0">Solution</a>
           </h5>
           <ul class="nav flex-column m-2">
             <li class="nav-item pb-1_5">
@@ -176,12 +151,12 @@ layout: layouts/base.liquid
             <li class="nav-item pb-1_5">
               <a href="#" class="nav-link text-light p-0">Collectivités</a>
             </li>
-            <li class="nav-item pb-1_5">
+            {% comment %} <li class="nav-item pb-1_5">
               <a href="#" class="nav-link text-light p-0">Préfectures</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link text-light p-0">Gestionnaires des eaux</a>
-            </li>
+            </li> {% endcomment %}
           </ul>
           <h5 class="pt-3">
             <a href="#" class="nav-link text-light p-0">Offres</a>
@@ -190,10 +165,10 @@ layout: layouts/base.liquid
         <div class="divider d-block d-sm-none my-3"></div>
         <div class="col mb-lg-3">
           <h5 class="pb-1_5">
-            <a href="#" class="nav-link text-light p-0">Développement</a>
+            <a href="/docs/api" class="nav-link text-light p-0">Développement</a>
           </h5>
           <h5 class="pb-1_5">
-            <a href="#" class="nav-link text-light p-0">Intégration</a>
+            <a href="/integrations" class="nav-link text-light p-0">Intégrations</a>
           </h5>
           <h5>
             <a href="#" class="nav-link text-light p-0">Ressources</a>
