@@ -5,7 +5,6 @@ pagination:
   alias: tag
   filter:
     - all
-    - post
     - posts
     - tagList
   addAllPagesToCollections: true
@@ -15,13 +14,22 @@ eleventyComputed:
 permalink: /tags/{{ tag | slugify }}/
 ---
 
-<div class="mb-4 pt-4 pb-4 border-bottom">
+<div class="bg-gray">
+  <div class="container">
 
-  <p class="mt-4 mb-0">Catégorie</p>
+    <div class="row mb-4 pt-4 pb-4 border-bottom">
+      {% if tag == "post" %}
+        <h1>Liste des posts</h1>
+      {% else %}
+        <p class="mt-4 mb-0">Catégorie</p>
+        <h1 class="mt-0 mb-4" style="font-weight: 600;">{{ tag | upcase }}</h1>
+      {% endif %}
 
-  <h1 class="mt-0 mb-4" style="font-weight: 600;">{{ tag | upcase }}</h1>
+    </div>
+    {% assign postslist = collections[tag] %}
 
+    <div class="row justify-content-around mb-5">
+      {% include "postslist.liquid" %}
+    </div>
+  </div>
 </div>
-
-{% assign postslist = collections[ tag ] %}
-{% include "postslist.liquid" %}

@@ -5,7 +5,6 @@ date: 2023-01-01
 image_url: /posts/2023-01-01-lancement-metarisc/metarisc.jpg
 tags:
   - post
-  - produit
 layout: layouts/post.liquid
 ---
 

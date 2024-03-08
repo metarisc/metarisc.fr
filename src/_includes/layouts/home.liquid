@@ -25,30 +25,34 @@ layout: layouts/base.liquid
     </button>
     <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav gap-2 mb-lg-0 mx-3 ">
-        <li class="nav-item dropdown px-2">
-          <a
-            class="nav-link dropdown-toggle text-light"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Groupement d'Intérêt Public
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="/gip/propos">A propos</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/gip/adherer">Adhérer</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/gip/membres">Les membres</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/gip/equipes">Les équipes</a>
-            </li>
-          </ul>
+        <li class="nav-item px-2">
+          <a class="nav-link text-light" href="/gip/propos">A propos</a>
         </li>
+        {% comment %} <li class="nav-item dropdown px-2">
+                                                                                                                        <a
+                                                                                                                          class="nav-link dropdown-toggle text-light"
+                                                                                                                          href="#"
+                                                                                                                          role="button"
+                                                                                                                          data-bs-toggle="dropdown"
+                                                                                                                          aria-expanded="false">
+                                                                                                                          Groupement d'Intérêt Public
+                                                                                                                        </a>
+                                                                                                                        <ul class="dropdown-menu">
+                                                                                                                          <li>
+                                                                                                                            <a class="dropdown-item" href="/gip/propos">A propos</a>
+                                                                                                                          </li>
+                                                                                                                          <li>
+                                                                                                                            <a class="dropdown-item" href="/gip/adherer">Adhérer</a>
+                                                                                                                          </li>
+                                                                                                                          <li>
+                                                                                                                            <a class="dropdown-item" href="/gip/membres">Les membres</a>
+                                                                                                                          </li>
+                                                                                                                          <li>
+                                                                                                                            <a class="dropdown-item" href="/gip/equipes">Les équipes</a>
+                                                                                                                          </li>
+                                                                                                                        </ul>
+                                                                                                </li> {% endcomment %}
+
 
         <li class="nav-item px-2">
           <a class="nav-link text-light" href="/solution">Solution</a>
@@ -76,7 +80,7 @@ layout: layouts/base.liquid
               <a class="dropdown-item" href="#">Communauté</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Blog</a>
+              <a class="dropdown-item" href="/tags/post">Blog</a>
             </li>
           </ul>
         </li>
@@ -119,21 +123,21 @@ layout: layouts/base.liquid
             <a href="/" class="nav-link text-light p-0">Accueil</a>
           </h5>
           <h5>
-            <a href="/propos" class="nav-link text-light p-0">Le GIP</a>
+            <a href="/gip/propos" class="nav-link text-light p-0">Le GIP</a>
           </h5>
           <ul class="nav flex-column m-2 gap-1_5">
             <li class="nav-item">
               <a href="/gip/propos" class="nav-link text-light p-0">À propos</a>
             </li>
-            <li class="nav-item">
-              <a href="/gip/adherer" class="nav-link text-light p-0">Adhérer</a>
-            </li>
-            <li class="nav-item">
-              <a href="/gip/membres" class="nav-link text-light p-0">Les membres</a>
-            </li>
-            <li class="nav-item">
-              <a href="/gip/equipes" class="nav-link text-light p-0">Les équipes</a>
-            </li>
+          <!--
+            <li class="nav-item">  <a href="/gip/adherer" class="nav-link text-light p-0">Adhérer</a></li>
+          <li class="nav-item">
+            <a href="/gip/membres" class="nav-link text-light p-0">Les membres</a>
+          </li>
+          <li class="nav-item">
+            <a href="/gip/equipes" class="nav-link text-light p-0">Les équipes</a>
+          </li>
+          -->
           </ul>
           <h5 class="pt-3">
             <a href="/contact" class="nav-link text-light p-0">Contact</a>
@@ -171,14 +175,14 @@ layout: layouts/base.liquid
             <a href="/integrations" class="nav-link text-light p-0">Intégrations</a>
           </h5>
           <h5>
-            <a href="#" class="nav-link text-light p-0">Ressources</a>
+            <a href="/tags/post" class="nav-link text-light p-0">Ressources</a>
           </h5>
           <ul class="nav flex-column m-2">
             <li class="nav-item pb-1_5">
               <a href="#" class="nav-link text-light p-0">Communauté</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-light p-0">Blog</a>
+              <a href="/tags/post" class="nav-link text-light p-0">Blog</a>
             </li>
           </ul>
         </div>
@@ -188,10 +192,10 @@ layout: layouts/base.liquid
             {% include "socialslist.liquid" %}
           </div>
           <div class="row mb-3 gap-3">
-            <h5>Adresse : 18 rue René CASSIN, 62223,                                                                                                                           
+            <h5>Adresse : 18 rue René CASSIN, 62223,                                                                                                                                      
                             Saint Laurent-Blangy</h5>
             <h5>
-              <a href="mailto:metarisc@sdis62.fr" class="nav-link text-light p-0">Mail :                                                                                                                           
+              <a href="mailto:metarisc@sdis62.fr" class="nav-link text-light p-0">Mail :                                                                                                                                      
                                 metarisc@sdis62.fr</a>
             </h5>
             <h5>Numéro : 03.21.21.81.36</h5>
