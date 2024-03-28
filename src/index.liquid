@@ -5,9 +5,9 @@ key: Home
 order: 1
 ---
 
-<!-- PREMIRE SECTION -->
+{% comment %} <!-- PREMIRE SECTION -->
 <!-- Titre, label des nouveautés -->
-<!-- Un container-fluid -> une row -> 2 cols -->
+<!-- Un container-fluid -> une row -> 2 cols --> {% endcomment %}
 <section class="firstSection">
   <div class="container-fluid">
     <div class="row d-flex gap-5 justify-content-between">
@@ -46,12 +46,12 @@ order: 1
   </div>
 </section>
 
-<!-- Créé le fond gris sur le reste de la page -->
+{% comment %} <!-- Créé le fond gris sur le reste de la page --> {% endcomment %}
 <div class="bg-gray pb-5">
-
+{% comment %} 
   <!-- SECONDE SECTION -->
   <!-- Liste des solutions -->
-  <!-- Un container-fluid -> une row en display flex -> une row avec les cards -->
+  <!-- Un container-fluid -> une row en display flex -> une row avec les cards --> {% endcomment %}
   <section class="secondSection">
     <div class="container-fluid pb-5">
       <div class="row mb-3_5 mx-lg-8">
@@ -68,10 +68,10 @@ order: 1
       </div>
     </div>
   </section>
-
+{% comment %} 
   <!-- TROISIEME SECTION -->
   <!-- Navs / Tabs, 2 images -->
-  <!-- Un container-fluid -> une row -> une col avec les tabs & texte -> une col avec les images -->
+  <!-- Un container-fluid -> une row -> une col avec les tabs & texte -> une col avec les images --> {% endcomment %}
   <section class="thirdSection">
     <div class="container-fluid">
       <div class="row mb-5 ms-lg-8 mx-1">
@@ -229,9 +229,9 @@ order: 1
     </div>
   </section>
 
-  <!-- QUATRIEME SECTION -->
+  {% comment %} <!-- QUATRIEME SECTION -->
   <!-- Navs / Tabs, 4 images (fonctionne avec ./scripts/script.js) -->
-  <!-- Un container-fluid -> une row -> une col avec les tabs -> une col avec les images -->
+  <!-- Un container-fluid -> une row -> une col avec les tabs -> une col avec les images --> {% endcomment %}
   <section class="fourthSection">
     <div class="container-fluid px-5 pb-5 mb-5">
       <div class="row mb-5 mx-lg-8">
@@ -402,9 +402,9 @@ order: 1
     </div>
   </section>
 
-  <!-- CINQUIEME SECTION -->
+  {% comment %} <!-- CINQUIEME SECTION -->
   <!-- Carousel -->
-  <!-- Un container-fluid -> une row -> une col btn previous -> une col avec les slides du carousel (postsCarousellist.liquid) -> une col btn next -> une row avec les buttons pour changer les slides -->
+  <!-- Un container-fluid -> une row -> une col btn previous -> une col avec les slides du carousel (postsCarousellist.liquid) -> une col btn next -> une row avec les buttons pour changer les slides --> {% endcomment %}
   <section class="fifthSection" id="fifthSection">
     <div class="container-fluid px-5 pb-5">
       <div class="row mb-5 mx-lg-8">
@@ -486,11 +486,11 @@ order: 1
       </div>
     </div>
   </section>
-
+{% comment %} 
   <!-- SIXIEME SECTION -->
   <!-- Une div "Contact" -->
   <!-- Un container -> une row -> une col avec un texte -> une col avec le bouton -->
-  <!-- Problème avec les images "angle-dotted-lines.svg" pour les mettres dans les coins (inférieur gauche et supérieur droit) -->
+  <!-- Problème avec les images "angle-dotted-lines.svg" pour les mettres dans les coins (inférieur gauche et supérieur droit) --> {% endcomment %}
   <section class="sixthSection">
     <div class="row w-75 mx-auto">
       {% include "contactRow.liquid" %}
