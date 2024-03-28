@@ -1,12 +1,16 @@
 {% for atout in atouts %}
 
-<div class="col">
+  <div class="col">
     <div class="card d-flex align-items-center border-secondary py-5 px-2 h-100 bg-snow-gray">
-        <i class="bi bi-check-lg bg-warning d-flex justify-content-center align-items-center fs-1"></i>
-        <div class="card-body d-flex flex-column align-items-center">
-            <span class="card-title fs-2 fw-bold text-center">{{atout.title}}</span>
-            <p class="card-text text-center">{{atout.text}}</p>
-        </div>
+      <img
+        src="{{ atout.img_url | url }}"
+        class="p-2"
+        width="150"
+        alt="picto-{{atout.title}}">
+      <div class="card-body d-flex flex-column align-items-center">
+        <span class="card-title fs-2 fw-bold text-center">{{ atout.title }}</span>
+        <p class="card-text text-center">{{ atout.text }}</p>
+      </div>
     </div>
-</div>
+  </div>
 {% endfor %}

@@ -1,16 +1,16 @@
 {% for post in postslist %}
-  <div class="col-4 my-2">
+  <div class="col-lg-4 col-md-6 col-sm-auto my-2">
     <div class="card bg-snow-gray p-2 mx-auto">
       <img
         src="{{ post.data.image_url | url }}"
         class="rounded card-img-top pb-2"
-        alt="...">
+        alt="miniature-post">
       <div class="card-body">
         <h3 class="card-title pb-2">{{ post.data.title }}</h3>
         <p class="card-text pb-2">{{ post.data.description }}</p>
         <div class="d-flex justify-content-between">
           <small class="text-smoked-pearl align-self-center">Posté le {{ post.date | date: "%d/%m/%Y" }}</small>
-          <a href="{{ post.url | url }}" class="btn btn-lagoon border-0 text-light py-1 px-2 text-truncate">En voir          
+          <a href="{{ post.url | url }}" class="btn btn-lagoon border-0 text-light py-1 px-2 text-truncate">En voir     
           plus</a>
         </div>
       </div>

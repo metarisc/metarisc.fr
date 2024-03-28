@@ -1,5 +1,4 @@
 window.addEventListener("load", (event) => {
-  console.log(event["currentTarget"]["location"]["pathname"]);
   if (event["currentTarget"]["location"]["pathname"] != "/gip/propos/") {
     return;
   }
