@@ -1,5 +1,5 @@
 ---
-title: Lancement du projet Metarisc 1
+title: Lancement du projet Metarisc
 description: "Présentation du projet Metarisc : ses ambitions, ses objectifs et son calendrier de lancement, découvrez le successeur de Prevarisc."
 date: 2023-01-01
 image_url: /posts/2023-01-01-lancement-metarisc/metarisc.jpg
