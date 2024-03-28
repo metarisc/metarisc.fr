@@ -1,22 +1,22 @@
 [
     {
         "title": "Service d'Incendie et de Secours",
-        "img_url": "img/bg-gradient.jpg",
+        "img_url": "img/solutions/SIS.png",
         "path":"/offres/sis"
     },
     {
         "title": "Collectiviés",
-        "img_url": "img/bg-gradient.jpg",
+        "img_url": "img/solutions/collec-logo.png",
         "path":"/offres/collectivites"
     },
     {
         "title": "Préfectures",
-        "img_url": "img/prefecture-logo.jpg",
+        "img_url": "img/solutions/prefecture-logo.jpg",
         "path":"/offres/prefectures"
     },
     {
         "title": "Gestionnaire des eaux",
-        "img_url": "img/bg-gradient.jpg",
+        "img_url": "img/solutions/gest-eaux-logo.png",
         "path":"/offres/gestionnaires-eaux"
     }
 
