@@ -3,64 +3,208 @@ layout: layouts/base.liquid
 ---
 
 <div class="wrapper">
-        
-    <nav class="page-header navbar navbar-expand-lg mb-4 border-bottom p-3">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="/img/metadome.png" width="50" height="50" class="d-inline-block align-top" alt="">
-            </a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/tags/produit">Produit</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/integrations">Intégrations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/docs/api">Développeurs</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item m-1">
-                    <a class="btn btn-sm btn-outline-dark" href="mailto:metarisc@sdis62.fr">Nous contacter</a>
-                </li>
-                <li class="nav-item m-1">
-                    <a class="btn btn-sm btn-success" href="https://app.metarisc.fr" target="_blank">
-                        Accéder à l'application
-                        <i class="bi bi-box-arrow-up-right"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <main class="container page-body">
-        {{ content }}
-    </main>
-
-    <div class="container-fluid page-footer text-light mt-4" style="background-color: #36393d">
-        <div class="container">
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 my-4">
-                <div class="col mb-3">
-                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                        <img src="/img/metadome.png" width="50" height="50" alt="">
+  <nav class="page-header navbar navbar-expand-xxl ps-4 pt-1" style="background-color: #495057 !important;">
+    <a class="navbar-brand" href="/">
+      <img
+        src="/img/logo.svg"
+        width="178"
+        height="47"
+        class="d-inline-block align-top"
+        alt="logo-metarisc">
+    </a>
+    <button
+      class="navbar-toggler bg-dark mb-3 mx-2"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon navbar-dark"></span>
+    </button>
+    <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav gap-2 mb-lg-0 mx-3 ">
+        <li class="nav-item px-2">
+          <a class="nav-link text-light" href="/gip/propos">A propos</a>
+        </li>
+        {% comment %} <li class="nav-item dropdown px-2">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Groupement d'Intérêt Public
                     </a>
-                    <p>Metarisc 2023</p>
-                </div>
-                <div class="col mb-3">
-                    <h5>Plateforme</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/" class="nav-link text-light p-0">Accueil</a></li>
-                        <li class="nav-item mb-2"><a href="/tags/produit" class="nav-link text-light p-0">Produit</a></li>
-                        <li class="nav-item mb-2"><a href="/integrations" class="nav-link text-light p-0">Intégrations</a></li>
-                        <li class="nav-item mb-2"><a href="/docs/api" class="nav-link text-light p-0">Développeurs</a></li>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="/gip/propos">A propos</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/gip/adherer">Adhérer</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/gip/membres">Les membres</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/gip/equipes">Les équipes</a>
+                      </li>
                     </ul>
-                </div>
-            </footer>
-        </div>
-    </div>
+                </li> {% endcomment %}
 
+
+        <li class="nav-item px-2">
+          <a class="nav-link text-light" href="/solution">Solution</a>
+        </li>
+
+        <li class="nav-item px-2">
+          <a class="nav-link text-light" href="/integrations">Intégrations</a>
+        </li>
+
+        <li class="nav-item px-2">
+          <a class="nav-link text-light" href="/offres/sis">Offres</a>
+        </li>
+
+        <li class="nav-item dropdown px-2">
+          <a
+            class="nav-link dropdown-toggle text-light"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Ressources
+          </a>
+          <ul class="dropdown-menu">
+            {% comment %} <li>
+              <a class="dropdown-item" href="#">Documentation</a>
+            </li> {% endcomment %}
+            <li>
+              <a class="dropdown-item" href="/tags/post">Blog</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item px-2">
+          <a class="nav-link text-light" href="mailto:metarisc@sdis62.fr">Contact</a>
+        </li>
+
+        <li class="nav-item my-auto px-2">
+          <a
+            class="btn btn-sm btn-lagoon text-light rounded border-0 px-1_5 py-1"
+            href="https://app.metarisc.fr"
+            target="_blank">
+            Accéder à l'application
+            <i class="bi bi-box-arrow-up-right"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-body hidden">
+    {{ content }}
+  </main>
+
+  <div class="container-fluid page-footer text-light position-relative" style="background-color: #36393d">
+    <div class="container-fluid w-75">
+      <footer class="row mt-4">
+        <div class="col mb-3 d-none d-xl-block">
+          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <img
+              src="/img/logo.svg"
+              width="178"
+              height="47"
+              alt="logo-metarisc">
+          </a>
+        </div>
+        <div class="col mb-lg-3">
+          <h5 class="pb-3">
+            <a href="/" class="nav-link text-light p-0">Accueil</a>
+          </h5>
+          <h5>
+            <a href="/gip/propos" class="nav-link text-light p-0">Le GIP</a>
+          </h5>
+          <ul class="nav flex-column m-2 gap-1_5">
+            <li class="nav-item">
+              <a href="/gip/propos" class="nav-link text-light p-0">À propos</a>
+            </li>
+
+            {% comment %} <li class="nav-item">  <a href="/gip/adherer" class="nav-link text-light p-0">Adhérer</a></li><li class="nav-item">  <a href="/gip/membres" class="nav-link text-light p-0">Les membres</a></li><li class="nav-item">  <a href="/gip/equipes" class="nav-link text-light p-0">Les équipes</a></li> {% endcomment %}
+
+          </ul>
+          <h5 class="pt-3">
+            <a href="mailto:metarisc@sdis62.fr" class="nav-link text-light p-0">Contact</a>
+          </h5>
+        </div>
+        <div class="divider d-block d-sm-none my-3"></div>
+        <div class="col mb-lg-3">
+          <h5>
+            <a href="/offres/sis" class="nav-link text-light p-0">Offres</a>
+          </h5>
+          <ul class="nav flex-column m-2">
+            <li class="nav-item pb-1_5">
+              <a href="/offres/sis" class="nav-link text-light p-0">SIS</a>
+            </li>
+            <li class="nav-item pb-1_5">
+              <a href="/offres/collectivites" class="nav-link text-light p-0">Collectivités</a>
+            </li>
+            <li class="nav-item pb-1_5">
+              <a href="/offres/prefectures" class="nav-link text-light p-0">Préfectures</a>
+            </li>
+            <li class="nav-item">
+              <a href="/offres/gestionnaires-eaux" class="nav-link text-light p-0">Gestionnaires des eaux</a>
+            </li>
+          </ul>
+          <h5 class="pt-3">
+            <a href="/solution" class="nav-link text-light p-0">Solution</a>
+          </h5>
+        </div>
+        <div class="divider d-block d-sm-none my-3"></div>
+        <div class="col mb-lg-3">
+          <h5 class="pb-1_5">
+            <a href="/docs/api" class="nav-link text-light p-0">Développement</a>
+          </h5>
+          <h5 class="pb-1_5">
+            <a href="/integrations" class="nav-link text-light p-0">Intégrations</a>
+          </h5>
+          <h5>
+            <a href="/tags/post" class="nav-link text-light p-0">Ressources</a>
+          </h5>
+          <ul class="nav flex-column m-2">
+            {% comment %} <li class="nav-item pb-1_5">
+              <a href="#" class="nav-link text-light p-0">Documentation</a>
+            </li> {% endcomment %}
+            <li class="nav-item">
+              <a href="/tags/post" class="nav-link text-light p-0">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="divider d-block d-sm-none my-3"></div>
+        <div class="col">
+          <div class="d-flex pb-3 gap-2_5">
+            {% include "socialslist.liquid" %}
+          </div>
+          <div class="row mb-3 gap-3">
+            <h5>Adresse : 18 rue René CASSIN, 62223, 
+              Saint Laurent-Blangy</h5>
+            <h5>
+              <a href="mailto:metarisc@sdis62.fr" class="nav-link text-light p-0">Mail : 
+                metarisc@sdis62.fr</a>
+            </h5>
+            <h5>Numéro : 03.21.21.81.36</h5>
+          </div>
+        </div>
+        <div class="row divider mt-5 w-100 overflow-hidden">
+          <div class="d-md-flex justify-content-center my-5 gap-4">
+            <a href="/mentions-legales" class="text-light">
+              <h5>Mentions légales</h5>
+            </a>
+            <a href="/politiques" class="text-light">
+              <h5>Politique de confidentialité</h5>
+            </a>
+            <a href="/conditions-generales" class="text-light">
+              <h5>Conditions Générales</h5>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
 </div>

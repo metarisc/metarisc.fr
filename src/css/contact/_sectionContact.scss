@@ -1,0 +1,38 @@
+.sectionContact {
+    background-image: url("../img/bg-gradient.jpg");
+    background-size: cover;
+
+    .cadre {
+        width: 43px;
+        height: 43px;
+    }
+
+    .bi {
+        font-size: 30px;
+    }
+
+    form {
+        .form-control, .form-control::placeholder {
+            color: white;
+            font-weight: 300 !important;
+        }
+
+        .form-select {
+            background-color: rgba(255, 255, 255, 0.24) !important;
+            backdrop-filter: blur(12px) !important;
+            box-shadow: 0px 0.918px 7.342px 0px rgba(94, 94, 94, 0.07) !important;
+            border: 1px solid #fff !important;
+            color: white;
+            appearance: none;
+            background-image: url("../img/arrow-down.svg");
+            background-size: 8px 7px;
+            font-weight: 300;
+
+        }
+
+        .input-required::before {
+            content: '* ';
+            color: #D01F3C;
+        }
+    }
+}

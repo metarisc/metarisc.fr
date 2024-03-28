@@ -1,0 +1,52 @@
+[
+    {
+        "date": "Février 2022", 
+        "name":"Lancement du partenariat entre le SDIS62 et le BMPM",
+        "text": "",
+        "img_url": "/img/timeline/signature.png"
+    },
+    {
+        "date": "Septembre 2022",
+        "name": "Dépôt de la marque METARISC à l’INPI",
+        "text": "",
+        "img_url": "/img/timeline/logo_metarisc.jpg"
+    },
+    {
+        "date": "Octobre 2023",
+        "name": "Présentation du projet au Congrès de Toulouse",
+        "text": "",
+        "img_url": "/img/timeline/congre-2023.jpg"
+    },
+    {
+        "date": "Avril 2024",
+        "name": "Livraison de la Version 1 de METARISC",
+        "text": "",
+        "img_url": "/img/secteurs-activites/erp.svg"
+    },
+    {
+        "date": "Juin 2024",
+        "name": "Envoi de la convention constitutive du GIP à l’état",
+        "text": ""
+    },
+    {
+        "date": "Septembre 2024",
+        "name": "Présentation de l’application au Congrès de Macon",
+        "text": "",
+        "img_url": "/img/timeline/congre_macon.jpg"
+    },
+    {
+        "date": "Octobre 2024",
+        "name": "Livraison de la Version 2 de METARISC",
+        "text": "Une nouvelle version intégrant notamment: <ul><li>Etablissement recevant du public (ERP)</li><li>Administration du droit des sols</li><li>Habitation</li><li>Défense extérieure contre l’incendie (DECI) des communes</li><li>Industrie</li>"
+    },
+    {
+        "date": "Novembre 2024",
+        "name": "Création du GIP",
+        "text": ""
+    },
+    {
+        "date": "Mars 2025",
+        "name": "Livraison de la Version 3 de METARISC",
+        "text": "Une nouvelle version intégrant notamment:<ul><li>Manifestation grands rassemblements</li><li>Indicateurs statistiques</li>"
+    }
+]

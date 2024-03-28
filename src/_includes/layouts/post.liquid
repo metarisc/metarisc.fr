@@ -3,24 +3,29 @@ layout: layouts/home.liquid
 templateClass: tmpl-post
 ---
 
-<section class="py-2 text-center container mb-4" style="border-bottom: 3px solid #4eb9a8">
+<div class="bg-gray">
+  <section class="py-2 text-center container mb-4" style="border-bottom: 3px solid #4EB9A8">
     <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">{{ title }}</h1>
-            <p class="lead text-muted">{{ description }}</p>
-            <p class="text-muted">Posté le {{ page.date | date: "%b %d, %y" }}</p>
-            {% for tag in tags | filterTagList %}
-                {% capture tagUrl %}/tags/{{ tag | slugify }}/{% endcapture %}
-                <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-            {% endfor %}
-            <img src="{{image_url | url}}" width="100%" class="mt-4">
-        </div>
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-medium">{{ title }}</h1>
+        <p class="lead">{{ description }}</p>
+        <p>Posté le {{ page.date | date: "%b %d, %y" }}</p>
+        {% for tag in tags | filterTagList %}
+          {% capture tagUrl %}/tags/{{ tag | slugify }}/{% endcapture %}
+          <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+        {% endfor %}
+        <img
+          src="{{image_url | url}}"
+          width="100%"
+          class="mt-4">
+      </div>
     </div>
-</section>
+  </section>
 
-<div class="post row">
+  <div class="post row">
     <div class="col-1"></div>
     <div class="col-10">
-        {{ content }}
+      {{ content }}
     </div>
+  </div>
 </div>

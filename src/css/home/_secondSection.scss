@@ -1,0 +1,51 @@
+.soluce {
+  border-radius: 8px;
+  transition: all 150ms ease-in;
+
+  a {
+    text-decoration: none;
+  }
+
+  .card {
+    border-color: transparent !important;
+    width: 296px;
+    height: 255px;
+
+    img {
+      border-radius: 8px 0 8px 0 !important;
+    }
+
+    .card-body {
+
+      .bi {
+        color: white;
+        font-size: 25px;
+      }
+
+      .card-title {
+        font-size: 20px;
+        font-weight: 400;
+        text-wrap: nowrap;
+      }
+
+    }
+
+    .card-img {
+      width: 232.619px;
+      height: 179.631px;
+    }
+
+  }
+
+  &:hover, &:focus {
+    background: rgba(255, 255, 255, 0.32) !important;
+    transform: scale(1.03);
+
+  }
+
+  &:not(:hover) {
+    transform: scale(1);
+    background: rgba(255, 255, 255, 0.24) !important;
+  }
+
+}

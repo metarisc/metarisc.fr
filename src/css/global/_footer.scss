@@ -1,0 +1,25 @@
+.page-footer {
+    h5 {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    li {
+      font-weight: 300;
+
+      &:last-child{
+        padding-bottom: 0 !important;
+      }
+    }
+    .sections {
+      column-gap: 104px;
+    }
+    position: relative;
+    bottom: 0;
+    background-color: #36393d;
+    box-shadow: 0px -11px 17px 0px rgba(255, 255, 255, 0.08);
+  
+    .bi {
+      font-size: 25px;
+    }
+  
+  }

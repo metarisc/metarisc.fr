@@ -1,0 +1,29 @@
+.contact {
+  position: relative;
+  height: 11em;
+
+  h3 {
+    font-weight: 400;
+    font-size: 28px;
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+}
+
+.contact img.tr-angle {
+  position: absolute;
+  rotate: 180deg;
+  top: -150px;
+  right: -150px;
+}
+
+.bl-angle {
+  position: absolute;
+  bottom: -150px;
+  left: -150px;
+}

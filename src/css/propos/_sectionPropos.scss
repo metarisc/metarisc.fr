@@ -1,0 +1,159 @@
+$lagoon: linear-gradient(90deg, #4EB9A8 0%, #4EB9A8 0.01%, #09806D 100%);
+$secondary-color: #fff;
+
+@media (max-width: 768px) {
+    span.switch-title {
+        font-size: 0;
+        right: -100%;
+    }
+
+    .swiper-pagination-switch:first-child {
+        span.switch-title {
+            justify-content: end !important;
+        }
+    }
+
+    .swiper-pagination-switch:last-child {
+        span.switch-title {
+            justify-content: left !important;
+        }
+    }
+
+}
+
+.swiper-container-wrapper {
+
+    .swiper-pagination-progressbar-fill {
+        background-color: transparent !important;
+    }
+
+    &--timeline {
+        .swiper-slide {
+            display: flex;
+            max-height: 500px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+            .container {
+                padding: 0;
+                width: 100%;
+            }
+
+            .title, img {
+                font-size: 14px;
+                opacity: 0;
+                transition: 0.75s ease 0.25s;
+            }
+
+            &-active {
+                .title, img {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .swiper-pagination-progressbar {
+            position: relative;
+            margin-bottom: 70px;
+            background-color: transparent;
+            height: 4px;
+            border-bottom: 1px solid $secondary-color;
+            width: 75%;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 3px;
+                right: -100%;
+                width: 100%;
+                height: 1px;
+                background-color: $secondary-color;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: -100%;
+                width: 100%;
+                height: 1px;
+                background-color: $secondary-color;
+            }
+        }
+
+        .swiper-pagination-custom {
+            position: relative;
+            list-style: none;
+            display: flex;
+            line-height: 1.66;
+            bottom: 0;
+            z-index: 11;
+            width: 100%;
+            display: flex;
+
+            .swiper-pagination-switch {
+                position: relative;
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                display: block;
+
+                .switch-title {
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    font-weight: 400;
+
+                    transition: 0.2s all ease-in-out;
+                    transition-delay: 0s;
+                    cursor: pointer;
+                    z-index: 1;
+
+                    &:after {
+                        position: absolute;
+                        top: calc(100% + 19px);
+                        right: 50%;
+                        transform: translateX(50%) translateY(-50%);
+                        width: 12px;
+                        height: 12px;
+                        background: $secondary-color;
+                        border-radius: 2rem;
+                        content: "";
+                        transition: 0.2s all ease-in-out;
+                        transition-delay: 0s;
+                        z-index: 1;
+                    }
+                }
+
+                &.active {
+                    .switch-title {
+                        background: $lagoon;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-size: 17px;
+                        transition-delay: 0.4s;
+
+                        &:after {
+                            background: $lagoon;
+                            width: 25px;
+                            height: 25px;
+                            transition-delay: 0.4s;
+                        }
+                    }
+
+                    ~.swiper-pagination-switch {
+                        .switch-title {
+                            color: $secondary-color;
+
+                            &:after {
+                                background: $secondary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,13 +3,13 @@
   {% for integration in integrations %}
 
     <div class="col d-flex align-items-stretch">
-      <div class="card bg-light bg-gradient">
+      <div class="card bg-snow-gray">
           <div class="card-body">
               <h5 class="card-title">
-                  <img src="{{integration.icon_url | url}}" width="50" height="50" class="rounded">
+                  <img src="{{integration.icon_url | url}}" width="50" height="50" class="rounded me-1">
                   {{integration.name}}
               </h5>
-              <p class="card-text text-secondary">{{integration.description}}</p>
+              <p class="card-text justify">{{integration.description}}</p>
           </div>
       </div>
     </div>

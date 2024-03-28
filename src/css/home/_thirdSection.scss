@@ -1,0 +1,45 @@
+ .nav-underline {
+   text-decoration: none;
+
+   .nav-link {
+     color: white;
+     font-weight: 300;
+
+
+     &.active {
+       font-weight: 400 !important;
+       background-clip: text;
+       background: linear-gradient(90deg, #4EB9A8 0%, #4EB9A8 0.01%, #09806D 100%);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       border-bottom-color: #09806D !important;
+     }
+
+     &:hover,
+     &:focus {
+       background-clip: text;
+       background: linear-gradient(90deg, #4EB9A8 0%, #4EB9A8 0.01%, #09806D 100%);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       border-bottom-color: #09806D !important;
+       transition-duration: 250ms;
+     }
+   }
+ }
+
+ .screen {
+   background-image: url(/img/screen.png);
+   background-repeat: no-repeat;
+   position: relative;
+   width: 1309px;
+   height: 926px;
+ }
+
+ .dotted-lines {
+   background-image: url(/img/dotted-lines.png);
+   background-repeat: no-repeat;
+   position: absolute;
+   right: -5%;
+   width: 469px;
+   height: 1047px;
+ }

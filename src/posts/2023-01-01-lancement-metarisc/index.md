@@ -8,7 +8,6 @@ tags:
   - produit
 layout: layouts/post.liquid
 ---
-
 Imaginez : Un portail unique opérationnel vous permettant d'avoir toutes vos données de prévention, de prévision, et bien plus encore, dans une seule application, facilitant votre quotidien. Organiser l'avenir en toute sérénité.
 
 Gagnez du temps grâce à des outils qui font le travail à votre place : de la connexion sur les plateformes de dématérialisation, à la diffusion des données opérationnelles sur vos cartes produites par le SIG.

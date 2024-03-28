@@ -1,0 +1,52 @@
+.firstSection {
+  background-image: url("../img/bg-gradient.jpg");
+  background-size: cover;
+  
+  p {
+    line-height: 20px;
+  }
+}
+
+.news {
+  text-decoration: none;
+
+  .label {
+    text-wrap: balance;
+    color: white;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 300;
+    letter-spacing: -0.308px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0px 0.918px 7.342px 0px rgba(94, 94, 94, 0.07);
+    backdrop-filter: blur(14.619999885559082px);
+  }
+
+  span {
+    border-radius: 4px;
+    font-weight: 400;
+  }
+}
+
+.resize {
+  height: 1059px;
+}
+
+.scroll {
+  font-style: italic !important;
+
+  i {
+    animation: iconScrollAnim 1s infinite ease-in alternate;
+  }
+
+  p {
+    animation: textScrollAnim 1s infinite ease-in alternate;
+  }
+}
+
+.screens {
+  background-image: url(/img/screens.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
