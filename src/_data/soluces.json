@@ -1,12 +1,12 @@
 [
     {
         "title": "Service d'Incendie et de Secours",
-        "img_url": "img/solutions/SIS.png",
+        "img_url": "img/solutions/SIS.jpg",
         "path":"/offres/sis"
     },
     {
         "title": "Collectiviés",
-        "img_url": "img/solutions/collec-logo.png",
+        "img_url": "img/solutions/collec-logo.jpg",
         "path":"/offres/collectivites"
     },
     {
@@ -16,7 +16,7 @@
     },
     {
         "title": "Gestionnaire des eaux",
-        "img_url": "img/solutions/gest-eaux-logo.png",
+        "img_url": "img/solutions/gest-eaux-logo.jpg",
         "path":"/offres/gestionnaires-eaux"
     }
 
