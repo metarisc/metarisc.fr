@@ -19,7 +19,7 @@
     },
     {
         "date": "Avril 2024",
-        "name": "Livraison de la Version 1 de METARISC",
+        "name": "Livraison du module DECI",
         "text": "",
         "img_url": "/img/secteurs-activites/erp.jpg"
     },
@@ -36,17 +36,29 @@
     },
     {
         "date": "Octobre 2024",
-        "name": "Livraison de la Version 2 de METARISC",
-        "text": "Une nouvelle version intégrant notamment: <ul><li>Etablissement recevant du public (ERP)</li><li>Administration du droit des sols</li><li>Habitation</li><li>Défense extérieure contre l’incendie (DECI) des communes</li><li>Industrie</li>"
+        "name": "Livraison du module ERP V1",
+        "text": "",
+        "img_url": "/img/secteurs-activites/erp.jpg"
     },
     {
-        "date": "Novembre 2024",
+        "date": "Décembre 2024",
+        "name": "Livraison du module ERP V2",
+        "text": "",
+        "img_url": "/img/secteurs-activites/erp.jpg"
+    },
+    {
+        "date": "Janvier 2025",
         "name": "Création du GIP",
         "text": ""
     },
     {
-        "date": "Mars 2025",
-        "name": "Livraison de la Version 3 de METARISC",
+        "date": "Avril 2025",
+        "name": "Livraison des modules HAB et Prév'Indus",
+        "text": ""
+    },
+    {
+        "date": "2025",
+        "name": "Livraison des modules grandes rassemblements et Indicateurs",
         "text": "Une nouvelle version intégrant notamment:<ul><li>Manifestation grands rassemblements</li><li>Indicateurs statistiques</li>"
     }
 ]
