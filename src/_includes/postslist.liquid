@@ -1,9 +1,9 @@
 {% for post in postslist %}
   <div class="col-lg-4 col-md-6 col-sm-auto my-2">
-    <div class="card bg-snow-gray p-2 mx-auto">
+    <div class="card bg-snow-gray p-2 mx-auto card-post">
       <img
         src="{{ post.data.image_url | url }}"
-        class="rounded card-img-top pb-2"
+        class="rounded card-img-top pb-2 thumbnail-post"
         alt="miniature-post">
       <div class="card-body">
         <h3 class="card-title pb-2">{{ post.data.title }}</h3>

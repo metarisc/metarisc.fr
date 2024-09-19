@@ -1,18 +1,24 @@
 .post {
-    p {
-      font-size: 18px;
-      line-height: 30px;
-      letter-spacing: -0.01em;
-      text-align: justify;
-    }
-  
-    h3 {
-      font-size: 20px;
-    }
-
-    img {
-      width: 50%;
-      display: flex;
-      margin: auto;
-    }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: justify;
   }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  img {
+    width: 50%;
+    display: flex;
+    margin: auto;
+  }
+}
+
+.thumbnail-post {
+  object-fit: cover;
+  object-position: top;
+  height: 200px;
+}
