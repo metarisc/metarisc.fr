@@ -6,8 +6,8 @@
         class="rounded card-img-top pb-2 thumbnail-post"
         alt="miniature-post">
       <div class="card-body">
-        <h3 class="card-title pb-2">{{ post.data.title }}</h3>
-        <p class="card-text pb-2">{{ post.data.description }}</p>
+        <h3 class="card-title pb-2 text-truncate" style="white-space: nowrap">{{ post.data.title }}</h3>
+        <p class="card-text pb-2">{{ post.data.description | truncate: 135 }}</p>
         <div class="d-flex justify-content-between">
           <small class="text-smoked-pearl align-self-center">Posté le {{ post.date | date: "%d/%m/%Y" }}</small>
           <a href="{{ post.url | url }}" class="btn btn-lagoon border-0 text-light py-1 px-2 text-truncate">En voir          
