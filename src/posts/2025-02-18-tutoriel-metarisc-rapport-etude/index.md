@@ -2,7 +2,7 @@
 title: Vidéo - Découvrez le rapport d'étude
 description: "Découvrez comment Metarisc facilite le travail des préventionnistes en offrant un outil performant pour l’analyse et la gestion des rapports d’étude."
 date: 2025-02-18
-image_url: /posts/2025-02-18-tutoriel-metarisc/thumbnail.png
+image_url: /posts/2025-02-18-tutoriel-metarisc-rapport-etude/thumbnail.png
 tags:
   - post
   - produit
