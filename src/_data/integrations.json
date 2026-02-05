@@ -8,10 +8,5 @@
     "name": "Plat'AU",
     "icon_url": "/img/integrations/platau.jpg",
     "description": "Récupérez vos dossiers dématérialisés grâce à la connexion native aux plateformes de dématérialisation des autorisations d’urbanisme."
-  },
-  {
-    "name": "MobilCOS",
-    "icon_url": "/img/integrations/mobilcos.jpg",
-    "description": "Affichez les informations DECI / ERP sur votre assistant numérique opérationnel."
   }
 ]
